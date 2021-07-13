@@ -7,3 +7,5 @@ gem "jekyll"
 gem "kramdown"
 
 # gem "rails"
+
+gem "webrick", "~> 1.7"
