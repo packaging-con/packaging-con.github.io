@@ -1,0 +1,27 @@
+---
+---
+
+header {
+	background: url("/assets/images/header_image.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+
+	#logo {
+		margin: 0 auto;
+		// width: 400px;
+		max-width: 50%;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.bg-purple {
+	color: #FFF;
+	background: #6200EE;
+}
+
+body {
+	// background: #0F0;
+}
