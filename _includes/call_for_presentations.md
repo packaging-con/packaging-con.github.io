@@ -1,3 +1,15 @@
+### Register for packaging-con
+
+Pre-register now to receive updates for packaging-con 2021. We will keep you in the loop on all things packaging-con!
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col text-center">
+        <a href="https://forms.gle/EddCDFZQqLFAbhRQ6" class="text-center btn btn-primary">Pre-register for packaging-con</a>
+    </div>
+  </div>
+</div>
+
 # Packaging Con 2021: Call for Presentations
 
 Software complexity is on the rise, but thanks to package managers, reusing software is
