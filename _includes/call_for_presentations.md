@@ -85,6 +85,7 @@ including but not limited to:
 * Functional package management, how it relates to other systems
 * Reliability/robustness of software ecosystems
 * Dependency solving: modeling, methods, and scalability
+* Intersection of containers, registries, and packaging
 
 This list is by no means exhaustive -- any topic related to package management is
 welcome to attend.
