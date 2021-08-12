@@ -52,7 +52,7 @@ Are you interested in helping out with the organization of PackagingCon 2021? We
 * Rok Garbas (Tweag I/O, Nix)
 * CJ Wright (Citadel, conda-forge)
 * Cheng H. Lee (Anaconda, Inc., conda)
-* Logan Kilpatrick (Julia)
+* Logan Kilpatrick (Julia, Pkg)
 
 
 ### Important Dates
