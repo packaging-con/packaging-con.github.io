@@ -35,7 +35,7 @@ package manager do it differently?
 If any of these questions interest you, we want to hear from you! Packaging Con is a a
 conference for developers of software package management software, as well as software
 packagers and communities! Anyone is welcome to participate. Our mission is to bring
-different software ecosystems together: from Python’s `pip` to Rust’s `cargo`, from
+different software ecosystems together: from Python’s `pip` to Rust’s `cargo` to Julia's `Pkg`, from
 Debian `apt` over to `Nix` to `conda` and `mamba`, and from `vcpkg` to `spack`, and even
 to `npm`, we hope to have many different approaches to package management at the
 conference.
