@@ -1,6 +1,6 @@
-### Register for packaging-con
+### Register for PackagingCon
 
-Pre-register now to receive updates for packaging-con 2021. We will keep you in the loop on all things packaging-con!
+Register now to receive updates for PackagingCon 2021. We will keep you in the loop on all things PackagingCon!
 
 
 #### Suggested Ticket Prices:
