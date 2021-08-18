@@ -1,11 +1,22 @@
-### Register for packaging-con
+### Register for PackagingCon
 
-Pre-register now to receive updates for packaging-con 2021. We will keep you in the loop on all things packaging-con!
+Register now to receive updates for PackagingCon 2021. We will keep you in the loop on all things PackagingCon!
+
+
+#### Suggested Ticket Prices:
+
+While PackagingCon has no costs for venue or catering, there are still costs associated with bringing the event online. Additionally, revenue from the event will be used for next year's conference and to support open source scientific computer programming through NumFOCUS, a nonprofit organization that sponsors 43 Open Source Projects, and organizes community-driven educational programs for users and developers of open source scientific tools.
+
+For this reason, we have chosen to sell tickets with a pay-what-you-can pricing model.
+
+- $20 for students
+- $50 for professionals
+- $100 for professionals (reimbursed by employer)
 
 <div class="container">
   <div class="row my-5">
     <div class="col text-center">
-        <a href="https://forms.gle/EddCDFZQqLFAbhRQ6" class="text-center btn btn-primary">Pre-register for packaging-con</a>
+        <a href="https://www.eventbrite.com/e/packagingcon-2021-tickets-164662898161" class="text-center btn btn-primary">Register for PackagingCon</a>
     </div>
   </div>
 </div>
