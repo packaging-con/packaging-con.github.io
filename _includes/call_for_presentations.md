@@ -77,6 +77,8 @@ Submissions are due at 23:59 ``anywhere on Earth'' on the specified date. Specif
 this is 23:59 IDLW, i.e., UTC–12:00. You can use this converter to figure out the
 deadline for your time zone.
 
+Note: US and European timezones will be targetted for the main conference event.
+
 ### Topics
 
 We encourage submissions in a wide range of areas related to package management,
