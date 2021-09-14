@@ -70,7 +70,7 @@ Are you interested in helping out with the organization of PackagingCon 2021? We
 
 * Submissions open:    20 July 2021
 * Submissions close:   31 August 2021
-* Notifications:       13 September 2021
+* Notifications:       ~~13~~ 22 September 2021
 * Conference date:     9 & 10 November 2021
 
 Submissions are due at 23:59 ``anywhere on Earth'' on the specified date. Specifically,
