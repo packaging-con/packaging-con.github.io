@@ -1,6 +1,6 @@
 [
     {
-        "title": "Julia's Pkg – Design & Rationale",
+        "title": "Julia's Pkg \u2013 Design & Rationale",
         "speakers": [
             {
                 "code": "9NNRE7",
@@ -46,18 +46,18 @@
         "speakers": [
             {
                 "code": "8MJPFR",
-                "name": "Steven! Ragnarök",
+                "name": "Steven! Ragnaro\u0308k",
                 "biography": "Steven! is a software developer and Linux system administrator who has been steadfastly running Linux through his computer science and mathematics education, web development career, and now as a Software Engineer leading the computer infrastructure team at Open Robotics. Steven!'s experience with Linux began on Slackware 9, where package management was a feature conspicuously absent from the installed system.",
                 "avatar": null
             },
             {
                 "code": "E7QRNP",
                 "name": "Tully Foote",
-                "biography": "Tully Foote is the Community and Business Development Manager at Open Robotics. He started his career working on autonomous cars for the DARPA Grand Challenges. From there he worked on ROS at Willow Garage and later Open Robotics in many different roles including active development of the ROS buildfarm. He has worked on a large variety of systems for indoor, outdoor, marine, aviation, and space. Two creations he’s known for are the tf transform library and the TurtleBot.",
+                "biography": "Tully Foote is the Community and Business Development Manager at Open Robotics. He started his career working on autonomous cars for the DARPA Grand Challenges. From there he worked on ROS at Willow Garage and later Open Robotics in many different roles including active development of the ROS buildfarm. He has worked on a large variety of systems for indoor, outdoor, marine, aviation, and space. Two creations he\u2019s known for are the tf transform library and the TurtleBot.",
                 "avatar": null
             }
         ],
-        "abstract": "We have developed a system which will automatically generate packages for deb based packaging systems such as Debian and Ubuntu, RPM based packaging systems such as Fedora and RHEL, as well as source based packaging/distribution systems such as Gentoo or OpenEmbedded. This talk will delve into how and why we’ve done it. We will cover lessons learned over the course of more than ten years of experience and then discuss where we’re going next and what tools and approaches we’ve developed that others may find useful."
+        "abstract": "We have developed a system which will automatically generate packages for deb based packaging systems such as Debian and Ubuntu, RPM based packaging systems such as Fedora and RHEL, as well as source based packaging/distribution systems such as Gentoo or OpenEmbedded. This talk will delve into how and why we\u2019ve done it. We will cover lessons learned over the course of more than ten years of experience and then discuss where we\u2019re going next and what tools and approaches we\u2019ve developed that others may find useful."
     },
     {
         "title": "The Haiku Package manager",
@@ -70,6 +70,18 @@
             }
         ],
         "abstract": "The Haiku operating system, which is a modern, open source re-implementation of BeOS from the 1990's, has an interesting software packaging system. Much like Debian's .deb or RedHat's .rpm files, Haiku's .hpkg files include the files, description of the software, and dependencies. Like it's Linux cousins, it also ensures that the dependencies are met, installing the dependencies if not already installed and available in the repository.\r\n\r\nWhat sets Haiku's package manager apart is two things: Each file in the package is mounted as a read-only file into the file system, which ensures security; and the boot manager is aware of the state of the packing system, allowing the user to reboot and start the operating system as it was in a prior state.\r\n\r\nSince each file is mounted from the package into the file system, it cannot be changed, either by the user (intentionally, or accidentally), or by a mis-behaving application. The only way to change the file is to install a different version, or to uninstall it completely. There is a downside to this though, it does make porting some applications tricky."
+    },
+    {
+        "title": "Will the Real Slugify Please Stand Up: Adventures in API Mapping and Dependency Discovery",
+        "speakers": [
+            {
+                "code": "LA7WJC",
+                "name": "CJ Wright",
+                "biography": "Christopher J. \u2018CJ\u2019 Wright is a member of the HPC team at Citadel. Previously CJ worked at Lab49 as a consultant and software engineer helping to advise clients in capital markets on strategic technology goals and build state of the art systems. Prior to his work at Lab49, CJ earned his PhD, MPhil and MS in Materials Science and Engineering from Columbia University, specializing in streaming data processing, data provenance, and x-ray scattering simulations. His work has spanned from crystal growth characterization to NASA Mars mission tomography to software support for complex experiments. CJ also holds a MS in Chemical Engineering from the University of South Carolina and a BS with honors in Chemical Physics from Brown University.\r\nCJ holds various prominent positions in the open source software community, including a seat on the Conda-Forge core developer team, chair of the Conda-Forge Bot and Finance sub-teams and is a member of various other Conda-Forge sub-teams. CJ\u2019s work on Conda-Forge helps deliver high quality software packages to the broader community and has earned him an award from the NUMFOCUS organization for his contributions. CJ is also a contributor to other important libraries in the Python and data science communities, including the regro project, streamz, and xonsh, among others.\r\nCJ grew up in Rockville Centre, New York and currently lives in New York City. In his free time CJ develops for open source projects, plays woodwind instruments, and works out by playing squash and sailing.",
+                "avatar": "https://pretalx.com/media/avatars/me_github_DOk6J9O.png"
+            }
+        ],
+        "abstract": "Defining dependency relationships is a fraught but integral part of the packaging process. Incorrect dependency definitions can have catastrophic consequences for users and the broader ecosystem. One of the reasons that specifying dependencies is so difficult is because version numbers are very loosely related to the actual property developers care about, the API and ABI. Software doesn\u2019t break if any API changed in a dependency, they only break if the API it relied on changed. Most version number do not capture this, providing a global view of a local problem. To address this, the symbol-management project has begun to catalog as many symbols as possible in the python ecosystem. While this was initially aimed at enhancing conda-forge\u2019s dependency metadata, the implications of the database are much greater. In addition to providing version constraint suggestions on dependencies, the project also enables the creation of version numbers based on changes in the project\u2019s symbols and determination of if a code-base is compatible with a given environment. In this talk I\u2019ll discuss the structure and motivations of the symbol-management project, some examples of how to use the project, and the future of the project."
     },
     {
         "title": "Unraveling the magic behind Buildpacks",
@@ -87,10 +99,10 @@
                 "avatar": null
             }
         ],
-        "abstract": "Cloud Native Buildpacks makes building container images a breeze. It comes with out-of-the-box support for rebasing, reproducibility, multiple entrypoints and more! In this talk we’ll uncover the magic that the lifecycle - the binary at the heart of CNB - uses to convert source code into OCI images."
+        "abstract": "Cloud Native Buildpacks makes building container images a breeze. It comes with out-of-the-box support for rebasing, reproducibility, multiple entrypoints and more! In this talk we\u2019ll uncover the magic that the lifecycle - the binary at the heart of CNB - uses to convert source code into OCI images."
     },
     {
-        "title": "Force Multipliers in Package Management: How 51 Homebrew Maintainers Keep Up With 10,000+ Packages",
+        "title": "Force Multipliers in Package Management: How Homebrew Maintainers Keep Up With 10,000+ Packages",
         "speakers": [
             {
                 "code": "QRWU3D",
@@ -119,7 +131,7 @@
             {
                 "code": "T8BR7D",
                 "name": "Bart Oldeman",
-                "biography": "Bart Oldeman (Ph.D., Engineering Mathematics, University of Bristol) works for McGill University in Montréal, Canada as a Scientific Computing Analyst, within the Calcul Québec and Compute Canada umbrella organizations. He is a Software Installation Coordinator for the Research Support National Team within Compute Canada.",
+                "biography": "Bart Oldeman (Ph.D., Engineering Mathematics, University of Bristol) works for McGill University in Montr\u00e9al, Canada as a Scientific Computing Analyst, within the Calcul Qu\u00e9bec and Compute Canada umbrella organizations. He is a Software Installation Coordinator for the Research Support National Team within Compute Canada.",
                 "avatar": null
             }
         ],
@@ -141,7 +153,7 @@
                 "avatar": null
             }
         ],
-        "abstract": "Software package managers have become a vital part of the modern software development process. They allow developers to easily adopt third-party software and streamline the development process. However, bad actors today reportedly leverage highly sophisticated techniques such as typo-squattng and social engineering to “supply” purposefully harmful code (malware) and carry out software supply chain attacks. For example, eslint-scope, a NPM package with millions of weekly downloads, was compromised to steal credentials from developers. \r\n\r\nWe are building a large-scale automated vetting infrastructure to analyze millions of published software packages and provide actionable insights into their composition and security posture. In this presentation, we will cover the technical details of our system and introduce a free tool for developers to detect accidental installation of “risky” packages and mitigate software supply chain attacks. We have already detected a number of abandoned, typo-squatting, and malicious packages. We will present our findings, highlight different types of attacks and measures that developers  can take to thwart such attacks. With our work, we hope to enhance productivity of the developer community by exposing undesired behavior in untrusted third-party code, maintaining developer trust and reputation, and enforcing security of package managers."
+        "abstract": "Software package managers have become a vital part of the modern software development process. They allow developers to easily adopt third-party software and streamline the development process. However, bad actors today reportedly leverage highly sophisticated techniques such as typo-squattng and social engineering to \u201csupply\u201d purposefully harmful code (malware) and carry out software supply chain attacks. For example, eslint-scope, a NPM package with millions of weekly downloads, was compromised to steal credentials from developers. \r\n\r\nWe are building a large-scale automated vetting infrastructure to analyze millions of published software packages and provide actionable insights into their composition and security posture. In this presentation, we will cover the technical details of our system and introduce a free tool for developers to detect accidental installation of \u201crisky\u201d packages and mitigate software supply chain attacks. We have already detected a number of abandoned, typo-squatting, and malicious packages. We will present our findings, highlight different types of attacks and measures that developers  can take to thwart such attacks. With our work, we hope to enhance productivity of the developer community by exposing undesired behavior in untrusted third-party code, maintaining developer trust and reputation, and enforcing security of package managers."
     },
     {
         "title": "Creating Open Source Unikernel Packages",
@@ -195,7 +207,7 @@
                 "avatar": "https://pretalx.com/media/avatars/meyers_headshot_bRCnWUy.jpg"
             }
         ],
-        "abstract": "Open source software communities rely heavily on user trust. However, typosquatting, watering hole attacks, and developer infrastructure exploits can easily undermine the same honor system that enables easy software package reuse. To better understand trust-based code reuse within language-based ecosystems like npm and Python Package Index (PyPI), IQT Labs recently surveyed 150 software engineers, data scientists, and web developers. Despite high levels of educational attainment, the majority of survey takers agreed with the statement “I wish I knew more about security vulnerabilities associated with code reuse.” When asked who is responsible for keeping code safe, more than half of respondents indicated security is a responsibility individual developers share with package registries. However, this diffusion of responsibility and assumption that package registries have adequate resources to address today's shared code vulnerabilities can lead to developer complacency, particularly since many participants admitted they “do not engage in pre-install code vetting.” In addition to discussing the value of more training, clearer policies, and more robust organizational support, this talk explores the importance of package manager usability."
+        "abstract": "Open source software communities rely heavily on user trust. However, typosquatting, watering hole attacks, and developer infrastructure exploits can easily undermine the same honor system that enables easy software package reuse. To better understand trust-based code reuse within language-based ecosystems like npm and Python Package Index (PyPI), IQT Labs recently surveyed 150 software engineers, data scientists, and web developers. Despite high levels of educational attainment, the majority of survey takers agreed with the statement \u201cI wish I knew more about security vulnerabilities associated with code reuse.\u201d When asked who is responsible for keeping code safe, more than half of respondents indicated security is a responsibility individual developers share with package registries. However, this diffusion of responsibility and assumption that package registries have adequate resources to address today's shared code vulnerabilities can lead to developer complacency, particularly since many participants admitted they \u201cdo not engage in pre-install code vetting.\u201d In addition to discussing the value of more training, clearer policies, and more robust organizational support, this talk explores the importance of package manager usability."
     },
     {
         "title": "Package registries for the Julia package manager",
@@ -220,8 +232,8 @@
             },
             {
                 "code": "TARERD",
-                "name": "Miro Hrončok",
-                "biography": "I am a member of the [Fedora](https://getfedora.org/)'s [Python SIG](https://fedoraproject.org/wiki/SIGs/Python).\r\n\r\nAs a Linux distribution packager and packager mentor, I’ve seen hundreds of upstream projects and hundreds of distro packages. I help design packaging upstream and downstream.\r\n\r\nI work at [Red Hat](http://www.redhat.com) Czech in the *Python Maintenance* team. I teach advanced Python (and Python packaging) at the [Czech Technical University](https://www.cvut.cz/) and I teach beginners in the Czech [PyLadies beginners courses](https://pyladies.cz/). I’m a contributing member of the [Python Software Foundation](https://www.python.org/psf/) and a member of the [Fedora Engineering Steering Committee](https://fedoraproject.org/wiki/Development/SteeringCommittee) and the [Fedora Packaging Committee](https://fedoraproject.org/wiki/Packaging_Committee), where I represent the technical and packaging leadership in Fedora.",
+                "name": "Miro Hron\u010dok",
+                "biography": "I am a member of the [Fedora](https://getfedora.org/)'s [Python SIG](https://fedoraproject.org/wiki/SIGs/Python).\r\n\r\nAs a Linux distribution packager and packager mentor, I\u2019ve seen hundreds of upstream projects and hundreds of distro packages. I help design packaging upstream and downstream.\r\n\r\nI work at [Red Hat](http://www.redhat.com) Czech in the *Python Maintenance* team. I teach advanced Python (and Python packaging) at the [Czech Technical University](https://www.cvut.cz/) and I teach beginners in the Czech [PyLadies beginners courses](https://pyladies.cz/). I\u2019m a contributing member of the [Python Software Foundation](https://www.python.org/psf/) and a member of the [Fedora Engineering Steering Committee](https://fedoraproject.org/wiki/Development/SteeringCommittee) and the [Fedora Packaging Committee](https://fedoraproject.org/wiki/Packaging_Committee), where I represent the technical and packaging leadership in Fedora.",
                 "avatar": null
             }
         ],
@@ -233,7 +245,7 @@
             {
                 "code": "B9NLTG",
                 "name": "Jasmine Dahilig",
-                "biography": "Jasmine is a software engineer at HashiCorp. She is an operating systems enthusiast and an avid fan of kitty café themed games.",
+                "biography": "Jasmine is a software engineer at HashiCorp. She is an operating systems enthusiast and an avid fan of kitty caf\u00e9 themed games.",
                 "avatar": "https://pretalx.com/media/avatars/jasmine_dahilig_profile_um7602T.png"
             }
         ],
@@ -316,7 +328,7 @@
         "speakers": [
             {
                 "code": "GCWSXB",
-                "name": "Bartłomiej Piotrowski",
+                "name": "Bart\u0142omiej Piotrowski",
                 "biography": "Maintainer of Flathub, app store and build service for Flatpak, member of GNOME Foundation, Site Reliability Engineer by trade. Spent the last 10 years maintaining packages for Arch Linux.",
                 "avatar": "https://pretalx.com/media/avatars/photo_2021-08-26_13-31-42_xt9DqzV.jpg"
             }
@@ -324,11 +336,23 @@
         "abstract": "Flatpak-builder is a wrapper around various Flatpak commands to simplify packaging software including, but not limited to, from source. But what if your application is already built as part of CI/CD pipeline, or the host Linux distribution has user namespaces disallowed? Let's have a look at what flatpak-builder actually does and how to flatpak software from scratch."
     },
     {
+        "title": "Homebrew: A Packagers Deep Dive",
+        "speakers": [
+            {
+                "code": "XPJMHN",
+                "name": "Mike McQuaid",
+                "biography": "Mike McQuaid is the Project Leader and maintainer for over a decade of the Homebrew macOS (and Linux) packager manager. For work, Mike is at Staff Engineer at GitHub on the Communities team.",
+                "avatar": "https://pretalx.com/media/avatars/Me_zSwiFBi.jpg"
+            }
+        ],
+        "abstract": "A deep-dive on the interesting (both good and bad) aspects of the Homebrew package manager that will be interesting to other package manager maintainers or enthusiasts."
+    },
+    {
         "title": "Packaging LLVM",
         "speakers": [
             {
                 "code": "ZJ3KYE",
-                "name": "Serge « sans » Paille",
+                "name": "Serge \u00ab sans \u00bb Paille",
                 "biography": "Sometimes a compiler engineer, sometimes a Fedora packager, sometimes a wood chopper",
                 "avatar": null
             }
@@ -345,7 +369,7 @@
                 "avatar": "https://pretalx.com/media/avatars/HKN210806_01ab-2_u50Vn8f.jpg"
             }
         ],
-        "abstract": "Containers and software packages share many traits, but there are also many key attributes lacking in the container management ecosystem that are otherwise present in the package management ecosystem. The popular thinking is that containers do not need package management as those tasks either don’t apply or can be delegated to a higher level orchestrator. The consequence of missing patterns from the packaging community is a less robust and less consistent user experience in distributed cloud compared to what we experience in other domains. This talk will discuss similarities (eg: state management, configuration, and organization of packages into meta-packages) and differences (eg: weak versioning, metadata inclusion, and build determinism) in the container ecosystem compared with familiar package management ecosystems and propose potential improvements to container management inspired by learnings from the package management space."
+        "abstract": "Containers and software packages share many traits, but there are also many key attributes lacking in the container management ecosystem that are otherwise present in the package management ecosystem. The popular thinking is that containers do not need package management as those tasks either don\u2019t apply or can be delegated to a higher level orchestrator. The consequence of missing patterns from the packaging community is a less robust and less consistent user experience in distributed cloud compared to what we experience in other domains. This talk will discuss similarities (eg: state management, configuration, and organization of packages into meta-packages) and differences (eg: weak versioning, metadata inclusion, and build determinism) in the container ecosystem compared with familiar package management ecosystems and propose potential improvements to container management inspired by learnings from the package management space."
     },
     {
         "title": "Fortran Package Manager: Toward a rich ecosystem of Fortran packages",
@@ -370,7 +394,7 @@
             },
             {
                 "code": "LSHGBM",
-                "name": "Jaime Rodríguez-Guerra",
+                "name": "Jaime Rodr\u00edguez-Guerra",
                 "biography": "Devops curious scientific software developer, now focusing on Python packaging.",
                 "avatar": null
             }
@@ -425,11 +449,11 @@
             {
                 "code": "ETFNEA",
                 "name": "Marina Moore",
-                "biography": "Marina Moore is a PhD student at NYU Tandon’s Secure Systems Lab focusing on secure software updates and supply chain security. While at NYU she has worked primarily on research and development for The Update Framework (TUF), Uptaneand Notary.",
+                "biography": "Marina Moore is a PhD student at NYU Tandon\u2019s Secure Systems Lab focusing on secure software updates and supply chain security. While at NYU she has worked primarily on research and development for The Update Framework (TUF), Uptaneand Notary.",
                 "avatar": "https://pretalx.com/media/avatars/Headshot_u29hcWZ.jpg"
             }
         ],
-        "abstract": "In this talk, Joshua Lock and Marina Moore will discuss common attacks on package managers, and the kinds of threats that package managers face as part of the software supply chain. They will then present The Update Framework (TUF), a mechanism for securing package managers against these threats in a simple, resilient way that will protect users against even nation state attacks. Package managers can adopt all features of TUF wholesale, or start with the subset that will be most helpful for their users. This talk will conclude with a demonstration of TUF’s versatility; explaining how TUF has been adopted by the Python Packaging Index (PyPI) to provide end-to-end protection of packages from the developer to the end user, and how this adoption can be used as a model for other package managers looking to improve software distribution and update security."
+        "abstract": "In this talk, Joshua Lock and Marina Moore will discuss common attacks on package managers, and the kinds of threats that package managers face as part of the software supply chain. They will then present The Update Framework (TUF), a mechanism for securing package managers against these threats in a simple, resilient way that will protect users against even nation state attacks. Package managers can adopt all features of TUF wholesale, or start with the subset that will be most helpful for their users. This talk will conclude with a demonstration of TUF\u2019s versatility; explaining how TUF has been adopted by the Python Packaging Index (PyPI) to provide end-to-end protection of packages from the developer to the end user, and how this adoption can be used as a model for other package managers looking to improve software distribution and update security."
     },
     {
         "title": "Go mod's lesser known features for supply chain security",
@@ -456,16 +480,16 @@
         "abstract": "Lxroot is a lightweight software virtualization tool (for Linux).  With Lxroot, a non-root user can safely and easily install, run, develop, and test both packages and package managers.  Compared with other virtualization tools, Lxroot is safer, smaller, conceptually simpler, and arguably more flexible (within the limits of what is possible as a non-root user).\r\n\r\nLxroot allows a non-root user to create chroot-style virtual environments via Linux namespaces.  Lxroot simply creates and configures these chroot-namespaces, and then runs programs inside them.  All the virtualization work is done directly by the Linux kernel itself, via its namespace capabilities.\r\n\r\nLxroot allows the simultaneous use of multiple package managers, both system package managers (such as pacman, apk, xbps, etc.), and non-system package managers (such as\r\npip, npm, Flatpak, conda, mamba, Spack, etc.).\r\n\r\nLxroot allows a non-root user, on a single host kernel, to easily mix-and-match packages, userlands, and package-managers from multiple sources, including from multiple different Linux distributions.\r\n\r\nDue to its simple and flexible nature, Lxroot has a variety of use cases related to the development, testing, and use of packages and package managers.\r\n\r\nMore information here:  https://github.com/parke/lxroot"
     },
     {
-        "title": "Python Packaging: Why Don’t You Just…?",
+        "title": "Python Packaging: Why Don\u2019t You Just\u2026?",
         "speakers": [
             {
                 "code": "XMQYJM",
                 "name": "Tzu-ping Chung",
-                "biography": "Tzu-ping builds his career around open source software, and enjoys committing his efforts to help make the world better. He builds all kinds of software for a living, from embedded system to single-page web applications, and contributes to the community when he can.\r\n\r\nTP is currently employed by [Astronomer](https://www.astronomer.io/) to work on the Apache Airflow project. Most of his off-time is spent improving Python’s packaging landscape, organising PyCon Taiwan, and building software with Python and other modern technologies. He loves (human) languages, and knows probably too much about linguistics and phonetics to make him welcome in parties.",
+                "biography": "Tzu-ping builds his career around open source software, and enjoys committing his efforts to help make the world better. He builds all kinds of software for a living, from embedded system to single-page web applications, and contributes to the community when he can.\r\n\r\nTP is currently employed by [Astronomer](https://www.astronomer.io/) to work on the Apache Airflow project. Most of his off-time is spent improving Python\u2019s packaging landscape, organising PyCon Taiwan, and building software with Python and other modern technologies. He loves (human) languages, and knows probably too much about linguistics and phonetics to make him welcome in parties.",
                 "avatar": null
             }
         ],
-        "abstract": "Every packaging system has its specific way of doing things, but to an outsider. Python’s seems to have a knack of finding the most non-straightforward and weird solution for every choice. This talk attempts to trace some of the peculiarities to find out the reasoning behind the decisions, and how they stand in the modern packaging landscape."
+        "abstract": "Every packaging system has its specific way of doing things, but to an outsider. Python\u2019s seems to have a knack of finding the most non-straightforward and weird solution for every choice. This talk attempts to trace some of the peculiarities to find out the reasoning behind the decisions, and how they stand in the modern packaging landscape."
     },
     {
         "title": "Streamlining VMware's Open Source Licensing Compliance With Bazel",
@@ -473,7 +497,7 @@
             {
                 "code": "Z3EMXB",
                 "name": "Daniel Machlab",
-                "biography": "A big fan of Open Source Software and an efficient development lifecycle, Daniel Machlab has dedicated his interests to making OSS license compliance seamless for his fellow VMware developers—and the entire Bazel community. Daniel's passion and appreciation for the Open Source Community dates back to his high school days when used OSS in his first apps. He had no idea that years later he would contribute a solution back to the community to make OSS easier to use.",
+                "biography": "A big fan of Open Source Software and an efficient development lifecycle, Daniel Machlab has dedicated his interests to making OSS license compliance seamless for his fellow VMware developers\u2014and the entire Bazel community. Daniel's passion and appreciation for the Open Source Community dates back to his high school days when used OSS in his first apps. He had no idea that years later he would contribute a solution back to the community to make OSS easier to use.",
                 "avatar": null
             }
         ],
@@ -492,11 +516,11 @@
         "abstract": "Several OpenSolaris descendants use the Image Packaging System, short IPS. IPS itself is a spiritual descendant of apt from debian. Addressing several shortcomings of apt and adding the concept of images, Update-alternatives (mediators) and other related tools."
     },
     {
-        "title": "IPFS ❤ Python Wheels: Efficient, Secure and Reproducible Repository",
+        "title": "IPFS \u2764 Python Wheels: Efficient, Secure and Reproducible Repository",
         "speakers": [
             {
                 "code": "HVFTSZ",
-                "name": "Nguyễn Gia Phong",
+                "name": "Nguy\u1ec5n Gia Phong",
                 "biography": "On the Internet, I am more commonly known as McSinyx, a Vietnamese free software enthusiast.  My areas of interest surround programming languages, concurrency, reproducibility and decentralization.",
                 "avatar": null
             },
@@ -526,7 +550,7 @@
         "speakers": [
             {
                 "code": "33LYX7",
-                "name": "Zbigniew Jędrzejewski-Szmek",
+                "name": "Zbigniew J\u0119drzejewski-Szmek",
                 "biography": "python, systemd, fedora linux",
                 "avatar": "https://pretalx.com/media/avatars/jedrzej-64x64_Be1Qsy4.jpg"
             },
@@ -556,7 +580,7 @@
         "speakers": [
             {
                 "code": "WR9GC9",
-                "name": "František Lachman",
+                "name": "Franti\u0161ek Lachman",
                 "biography": "Software engineer at Red Hat; Project owner in the Packit team; teacher at Faculty of Informatics, Masaryk University, Brno; member of the Scout Movement and Python enthusiast.",
                 "avatar": "https://pretalx.com/media/avatars/avatar-kniha_293XQHp.png"
             },
@@ -567,7 +591,7 @@
                 "avatar": null
             }
         ],
-        "abstract": "We are offering Packit, a free GitHub app and GitLab integration which enables you to build and test your upstream project on an RPM-based Linux distribution like Fedora Linux, CentOS Stream, Mageia or openSUSE. Once you get RPM builds of your project, you can be pretty sure that your project will work once released and delivered via the downstream distribution. The core functionality of Packit is built around pull requests (as a standard CI system) and releases (bring the release to Fedora rawhide). You can read more about Packit at https://packit.dev/\r\n\r\nIn this session, Franta and Tomas will describe the Packit project, Fedora’s packaging workflow, showcase some of the well-known projects which use Packit and offer a brief perspective on what it’s like to develop and maintain the integration service."
+        "abstract": "We are offering Packit, a free GitHub app and GitLab integration which enables you to build and test your upstream project on an RPM-based Linux distribution like Fedora Linux, CentOS Stream, Mageia or openSUSE. Once you get RPM builds of your project, you can be pretty sure that your project will work once released and delivered via the downstream distribution. The core functionality of Packit is built around pull requests (as a standard CI system) and releases (bring the release to Fedora rawhide). You can read more about Packit at https://packit.dev/\r\n\r\nIn this session, Franta and Tomas will describe the Packit project, Fedora\u2019s packaging workflow, showcase some of the well-known projects which use Packit and offer a brief perspective on what it\u2019s like to develop and maintain the integration service."
     },
     {
         "title": "An Invitation to Order-Theoretic Models of Package Dependencies",
@@ -603,7 +627,7 @@
                 "avatar": null
             }
         ],
-        "abstract": "`npm audit`, `cargo audit`, `dependabot`, and similar analyzers have one thing in common: they provide feedback by only analyzing project manifests. I have one big problem with this: we are generalizing how projects use dependencies through metadata analysis! Without looking into how projects \"actually\" use dependencies, we deprive developers of insightful feedback that could save development time and effort. In this talk, I will discuss the differences and similarities between metadata-level versus code-level (i.e., static analysis) dependency analyses. Specifically, I will explain scenarios that are sufficient to use metadata analysis and when it is not. Moreover, I will also discuss the general applicability and challenges of adopting static analysis in dependency analyzers.\r\n\r\nThe talk is based on my research paper: \"Präzi: From Package-based to Call-based Dependency Networks\" You can find the paper here: https://arxiv.org/abs/2101.09563"
+        "abstract": "`npm audit`, `cargo audit`, `dependabot`, and similar analyzers have one thing in common: they provide feedback by only analyzing project manifests. I have one big problem with this: we are generalizing how projects use dependencies through metadata analysis! Without looking into how projects \"actually\" use dependencies, we deprive developers of insightful feedback that could save development time and effort. In this talk, I will discuss the differences and similarities between metadata-level versus code-level (i.e., static analysis) dependency analyses. Specifically, I will explain scenarios that are sufficient to use metadata analysis and when it is not. Moreover, I will also discuss the general applicability and challenges of adopting static analysis in dependency analyzers.\r\n\r\nThe talk is based on my research paper: \"Pr\u00e4zi: From Package-based to Call-based Dependency Networks\" You can find the paper here: https://arxiv.org/abs/2101.09563"
     },
     {
         "title": "Why everyone should do reproducible builds",
@@ -623,7 +647,7 @@
             {
                 "code": "7VEMTT",
                 "name": "Tom Mens",
-                "biography": "Prof. Dr. Tom Mens obtained a PhD in Science in 1999 at the Vrije Universiteit Brussel, Belgium. He is  full professor at the University of Mons in Belgium, where he  directs the Software Engineering Lab. His research interests include software evolution, quality and health management of software ecosystems, and open source software analytics. He published numerous highly-cited scientific articles in peer-reviewed international software engineering conferences and journals. He is project leader of the joint Belgian FNRS-FWO Excellence of Science project SECOAssist “Automated Assistance for Developing Software in Ecosystems of the Future”.",
+                "biography": "Prof. Dr. Tom Mens obtained a PhD in Science in 1999 at the Vrije Universiteit Brussel, Belgium. He is  full professor at the University of Mons in Belgium, where he  directs the Software Engineering Lab. His research interests include software evolution, quality and health management of software ecosystems, and open source software analytics. He published numerous highly-cited scientific articles in peer-reviewed international software engineering conferences and journals. He is project leader of the joint Belgian FNRS-FWO Excellence of Science project SECOAssist \u201cAutomated Assistance for Developing Software in Ecosystems of the Future\u201d.",
                 "avatar": null
             }
         ],
@@ -696,6 +720,18 @@
         "abstract": "Linux package managers are too slow; how could we make things better?"
     },
     {
+        "title": "SBOM, Packaging, and Vulnerabilities",
+        "speakers": [
+            {
+                "code": "EV3Z8M",
+                "name": "Art Manion",
+                "biography": "Art Manion is the Vulnerability Analysis Technical Manager at the CERT Coordination Center (CERT/CC), part of the Software Engineering Institute at Carnegie Mellon University. He and his team coordinate complex vulnerability disclosures, perform in-depth technical analysis, and influence practice, standards, and policy.",
+                "avatar": "https://pretalx.com/media/avatars/ArtManionHeadshot2tight_682V49o.jpg"
+            }
+        ],
+        "abstract": "Three years of community-oriented software bill of materials (SBOM) work under NTIA has lead to (among other things):\r\n\r\n* Framing of a model, architecture, and requirements for SBOMs, data, and processes\r\n* Formats that satisfy the framing constraints: SPDX, CycloneDX, SWID\r\n\r\nTo scale, and really to function at all, SBOM production needs to happen during software development phases such as build, *packaging*, and deployment. See that? Packaging.\r\n\r\nWe informally reviewed a handful of package management systems to look for commonality, differences, and alignment with the NTIA SBOM effort. One clearly identified SBOM use case, vulnerability management, stands to benefit from more and higher quality SBOM and inventory information.\r\n\r\nWhat kinds of data does vulnerability management need from SBOM? To what extent do package management systems provide this data? What are the common elements that package management systems already provide?"
+    },
+    {
         "title": "How Helm, The Package Manager For Kubernetes, Works",
         "speakers": [
             {
@@ -708,7 +744,7 @@
         "abstract": "Helm is the long standing package manager for Kubernetes. Helm packages, called charts, are installed from distributed repositories. In this session you'll learn how Helm came to be, how Helm works, and why it was designed this way. This will include how Helm handles dependencies, how charts are created, signing and verification, and more."
     },
     {
-        "title": "BinaryBuilder.jl — Using Julia's Pkg to deliver binary libraries",
+        "title": "BinaryBuilder.jl \u2014 Using Julia's Pkg to deliver binary libraries",
         "speakers": [
             {
                 "code": "B98NWS",
@@ -718,7 +754,7 @@
             },
             {
                 "code": "ST7KZT",
-                "name": "Mosè Giordano",
+                "name": "Mos\u00e8 Giordano",
                 "biography": "Research Software Developer at UCL during the day, binary builder during the night.",
                 "avatar": null
             }

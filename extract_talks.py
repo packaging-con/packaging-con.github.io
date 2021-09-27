@@ -37,4 +37,4 @@ while have_next:
 		d = pretalx_api(d["next"])
 
 with open('talks.json', 'w') as fo:
-	json.dump(export_json, fo)
+	json.dump(export_json, fo, indent=4)
