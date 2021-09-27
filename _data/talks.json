@@ -1,0 +1,728 @@
+[
+    {
+        "title": "Julia's Pkg – Design & Rationale",
+        "speakers": [
+            {
+                "code": "9NNRE7",
+                "name": "Stefan Karpinski",
+                "biography": "Co-creator of Julia & co-founder of Julia Computing (https://juliahub.com).",
+                "avatar": "https://pretalx.com/media/avatars/headshot_b9LOjYE.jpeg"
+            }
+        ],
+        "abstract": "The Julia programming language features a built-in package manager commonly referred to as \"Pkg\".  It's actually the third iteration of package manager for the language, code-named Pkg3 while in development. The previous iterations were quite traditional, inspired by Perl's CPAN and RubyGems. Pkg3 is *different*. This talk explores how it differs from its predecessors and other package managers and what lessons we've learned while developing it and scaling up its usage."
+    },
+    {
+        "title": "Building a flexible dependency solver in Rust",
+        "speakers": [
+            {
+                "code": "M8KJGY",
+                "name": "Matthieu Pizenberg",
+                "biography": "I'm a computer vision researcher with a passion for open source and functional programming. Last year I made a deep dive into dependency resolution which was needed for my Elm test runner.",
+                "avatar": null
+            },
+            {
+                "code": "JVMKTN",
+                "name": "Jacob Finkelman",
+                "biography": "I am on the Cargo Team helping to maintain Rusts package manager. \r\nI work on the CodeArtifact project for AWS.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Dependency solving is a hard problem, especially when mixed with additional features such as optional dependencies, multiple versions or availability of pre-releases. We present a rewrite from scratch of a recent algorithm called PubGrub, as a Rust library aiming at great performance and flexibility for reuse. We will dive into its core mechanisms, its high-level usage, as well as our new ideas enabling behavioral extensions such as optional dependencies, entirely in user space without changing the library API."
+    },
+    {
+        "title": "Tools for packaging and using Portable TeX Documents",
+        "speakers": [
+            {
+                "code": "FM3GTC",
+                "name": "Jonathan Fine",
+                "biography": "I'm a long-term user and developer of TeX. I'm now retired from the Open University in the UK, where I was the LaTeX officer. My talk on Portable TeX Documents is based on my experience of problems in packaging TeX, informed by my knowledge of Python, Elm and Debian.\r\n\r\nhttps://jfine2358.github.io/",
+                "avatar": null
+            }
+        ],
+        "abstract": "Both software and documents have dependencies. This talk focuses on managing document dependencies, to reduce both network and computation latency, and to ensure reproducible build (or typesetting) behaviour. Web development has a strong focus on reducing user experienced latency, as does serverless cloud computing.\r\n\r\nAt present human activity and large downloads are required to achieve these goals for TeX documents.  To improve matters the speaker has introduced the concept of Portable TeX Documents (PTD).  The PTD concept is intended to bring to source documents and the TeX community benefits similar to the benefits Portable Document Format (PDF) brought to Word users and Adobe.\r\n\r\nThe concepts and tools underlying PTD, particularly mounting git as a read-only file system, and the use of git backing stores (alternate object databases) are likely to be useful elsewhere. This is particularly true when most of the variability of a system lies in a small folder of text files (which is the case for TeX's typesetting inputs)."
+    },
+    {
+        "title": "Automated packaging for multiple platforms: Successes and lessons learned while packaging ROS",
+        "speakers": [
+            {
+                "code": "8MJPFR",
+                "name": "Steven! Ragnarök",
+                "biography": "Steven! is a software developer and Linux system administrator who has been steadfastly running Linux through his computer science and mathematics education, web development career, and now as a Software Engineer leading the computer infrastructure team at Open Robotics. Steven!'s experience with Linux began on Slackware 9, where package management was a feature conspicuously absent from the installed system.",
+                "avatar": null
+            },
+            {
+                "code": "E7QRNP",
+                "name": "Tully Foote",
+                "biography": "Tully Foote is the Community and Business Development Manager at Open Robotics. He started his career working on autonomous cars for the DARPA Grand Challenges. From there he worked on ROS at Willow Garage and later Open Robotics in many different roles including active development of the ROS buildfarm. He has worked on a large variety of systems for indoor, outdoor, marine, aviation, and space. Two creations he’s known for are the tf transform library and the TurtleBot.",
+                "avatar": null
+            }
+        ],
+        "abstract": "We have developed a system which will automatically generate packages for deb based packaging systems such as Debian and Ubuntu, RPM based packaging systems such as Fedora and RHEL, as well as source based packaging/distribution systems such as Gentoo or OpenEmbedded. This talk will delve into how and why we’ve done it. We will cover lessons learned over the course of more than ten years of experience and then discuss where we’re going next and what tools and approaches we’ve developed that others may find useful."
+    },
+    {
+        "title": "The Haiku Package manager",
+        "speakers": [
+            {
+                "code": "UXJWVR",
+                "name": "Richard Zak",
+                "biography": "Richard Zak is a machine learning researcher and software engineer for a large company, and part-time university lecturer.",
+                "avatar": null
+            }
+        ],
+        "abstract": "The Haiku operating system, which is a modern, open source re-implementation of BeOS from the 1990's, has an interesting software packaging system. Much like Debian's .deb or RedHat's .rpm files, Haiku's .hpkg files include the files, description of the software, and dependencies. Like it's Linux cousins, it also ensures that the dependencies are met, installing the dependencies if not already installed and available in the repository.\r\n\r\nWhat sets Haiku's package manager apart is two things: Each file in the package is mounted as a read-only file into the file system, which ensures security; and the boot manager is aware of the state of the packing system, allowing the user to reboot and start the operating system as it was in a prior state.\r\n\r\nSince each file is mounted from the package into the file system, it cannot be changed, either by the user (intentionally, or accidentally), or by a mis-behaving application. The only way to change the file is to install a different version, or to uninstall it completely. There is a downside to this though, it does make porting some applications tricky."
+    },
+    {
+        "title": "Unraveling the magic behind Buildpacks",
+        "speakers": [
+            {
+                "code": "RPJYFT",
+                "name": "Sambhav Kothari",
+                "biography": "Sambhav Kothari is an ML Engineer in the Data Science Platform team at Bloomberg, focusing on building better container integrations for machine learning workflows. He is one of the maintainers for the Cloud Native Buildpacks project.",
+                "avatar": "https://pretalx.com/media/avatars/SambhavKothari-00617-01_4LAbak3.jpeg"
+            },
+            {
+                "code": "U8DHA8",
+                "name": "Natalie Arellano",
+                "biography": "Natalie is a software engineer at VMware. She is currently a maintainer for the Cloud Native Buildpacks project.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Cloud Native Buildpacks makes building container images a breeze. It comes with out-of-the-box support for rebasing, reproducibility, multiple entrypoints and more! In this talk we’ll uncover the magic that the lifecycle - the binary at the heart of CNB - uses to convert source code into OCI images."
+    },
+    {
+        "title": "Force Multipliers in Package Management: How 51 Homebrew Maintainers Keep Up With 10,000+ Packages",
+        "speakers": [
+            {
+                "code": "QRWU3D",
+                "name": "Caleb Xu",
+                "biography": "Caleb lives in the Raleigh-Durham metropolitan area in North Carolina, USA. He graduated in 2021 from the University of North Carolina at Chapel Hill with a B.S. Computer Science.\r\n\r\nHe first got involved in package management in 2014 with contributions to Homebrew Cask, an extension on the [Homebrew](https://brew.sh) package manager that manages the installation of GUI apps on macOS. After Homebrew Cask was eventually merged into Homebrew itself in 2018, he started to participate in maintaining Homebrew's [core packages](https://github.com/Homebrew/homebrew-core).\r\n\r\nIn his spare time, you may find him taking a screen break with a walk on one of the Raleigh-Durham area's many greenways and trails, having a stab at a new recipe in the kitchen, or fine-tuning a traffic light cycle in _[Cities: Skylines](https://www.citiesskylines.com/)_.",
+                "avatar": null
+            }
+        ],
+        "abstract": "An overview of the policies, design choices, and tooling that allow a team to maintain the Homebrew ecosystem, enabling timely delivery of updates while minimizing regressions in packages and dependency trees."
+    },
+    {
+        "title": "$ swift package-registry init",
+        "speakers": [
+            {
+                "code": "GX99HG",
+                "name": "Mattt",
+                "biography": "[Mattt](https://github.com/mattt) is a software engineer at GitHub working on the Swift package registry. He's the founder of [NSHipster](https://nshipster.com), a journal of the overlooked bits in Objective-C, Swift, and Cocoa. Previously, he worked at Apple as a technical writer, contributing to The Swift Programming Language, Swift Package Manager, and Swift.org.",
+                "avatar": "https://pretalx.com/media/avatars/mattt_RxvgaND.jpg"
+            }
+        ],
+        "abstract": "Since its first release, Swift Package Manager has downloaded dependencies using Git. Although a capable version-control system, Git isn't well-suited to this workflow for a variety of reasons. We're currently rolling out a brand new package registry that's designed from the ground up to meet the current and future needs of that Swift ecosystem. In this talk, we'll discuss some of the considerations we made and lessons we learned along the way."
+    },
+    {
+        "title": "Combining CVMFS, Nix or Gentoo Prefix, Lmod, and EasyBuild at Compute Canada",
+        "speakers": [
+            {
+                "code": "T8BR7D",
+                "name": "Bart Oldeman",
+                "biography": "Bart Oldeman (Ph.D., Engineering Mathematics, University of Bristol) works for McGill University in Montréal, Canada as a Scientific Computing Analyst, within the Calcul Québec and Compute Canada umbrella organizations. He is a Software Installation Coordinator for the Research Support National Team within Compute Canada.",
+                "avatar": null
+            }
+        ],
+        "abstract": "One of the challenges in HPC is to deliver a consistent software stack that balances the needs of the system administrators with the needs of the users. This means running recent software on enterprise Linux distributions that ship older software. Traditionally this is accomplished using environment modules, that change environment variables such as $PATH to point to the software that is needed. At Compute Canada we have taken this further by distributing a complete user-level software stack, including all needed libraries including the GNU C library (Glibc), but excluding any privileged components. Our setup combined Nix, and now combines Gentoo Prefix for the bottom layer of base components, EasyBuild for the top layer of more scientifically inclined components, Lmod to implement environment modules, and the CernVM File System (CVMFS) to distribute it to Canadian supercomputers and anyone else who is interested. This approach has gained interest in other places, most notably with the EESSI project that originated in Europe.\r\n\r\nI will describe our setup and discuss the pros and cons of Nix versus Gentoo Prefix, and the challenges that come with using glibc in a non-standard location."
+    },
+    {
+        "title": "Mitigating Open-source Software Supply Chain Attacks With OSSIBOT",
+        "speakers": [
+            {
+                "code": "MHWXGD",
+                "name": "Ashish Bijlani",
+                "biography": "Ashish holds a Ph.D. in Computer Science from Georgia Institute of Technology. He has over 8 years of industry experience, from working at startups as well as the Fortune 100 technology companies. Currently, Ashish leads the research and development at Ossillate, a cybersecurity startup that he founded during as a graduate student. He has a record of highly visible research, including 4 software patents and 8 peer-reviewed academic papers in top-tier Computer Science conferences. He has also presented his work at premier industry conferences, such as Open Source Summit and Linux Plumbers Conference.",
+                "avatar": "https://pretalx.com/media/avatars/Screen_Shot_2021-08-31_at_4.57.24_PM_b7giXnW.png"
+            },
+            {
+                "code": "3HHFC7",
+                "name": "Ajinkya Rajput",
+                "biography": null,
+                "avatar": null
+            }
+        ],
+        "abstract": "Software package managers have become a vital part of the modern software development process. They allow developers to easily adopt third-party software and streamline the development process. However, bad actors today reportedly leverage highly sophisticated techniques such as typo-squattng and social engineering to “supply” purposefully harmful code (malware) and carry out software supply chain attacks. For example, eslint-scope, a NPM package with millions of weekly downloads, was compromised to steal credentials from developers. \r\n\r\nWe are building a large-scale automated vetting infrastructure to analyze millions of published software packages and provide actionable insights into their composition and security posture. In this presentation, we will cover the technical details of our system and introduce a free tool for developers to detect accidental installation of “risky” packages and mitigate software supply chain attacks. We have already detected a number of abandoned, typo-squatting, and malicious packages. We will present our findings, highlight different types of attacks and measures that developers  can take to thwart such attacks. With our work, we hope to enhance productivity of the developer community by exposing undesired behavior in untrusted third-party code, maintaining developer trust and reputation, and enforcing security of package managers."
+    },
+    {
+        "title": "Creating Open Source Unikernel Packages",
+        "speakers": [
+            {
+                "code": "8CGWB7",
+                "name": "Ian Eyberg",
+                "biography": "Ian Eyberg is the founder of NanoVMs, the maintainer of the open source Nanos unikernel and associated toolchain. Ian has a long background in open source starting with Slackware floppies in the mid-90s and is a noted authority on unikernels.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Unikernels are a new way of deploying individual applications as virtual machines in the cloud that can run linux applications faster and safer than linux. Since unikernels are deployed as virtual machines, packaging allows end-users to run common software without compiling it themselves in a cross-platform and cross-architecture way."
+    },
+    {
+        "title": "Homebrew: improved Linux support (and a historical review of our Linux CI)",
+        "speakers": [
+            {
+                "code": "YDADBN",
+                "name": "Michka Popoff",
+                "biography": "I am a Python developer with more than 9 years of experience. I also have 3 years of experience in Java programming.\r\n\r\nI am an open-source enthusiast. I am part of Homebrew's technical committee (the missing package manager for Mac (or Linux)): https://github.com/Homebrew/brew. I am also the lead maintainer of the Linuxbrew/homebrew-core project, and of the pygccxml Python library. Check out my GitHub account: https://github.com/iMichka.\r\n\r\nI have a PhD in Physics from the University of Lille 1 (France). I speak French, German, English and Luxembourgish. I regularly run marathons (and sometimes even longer distances than that).",
+                "avatar": "https://pretalx.com/media/avatars/IMG_1246_1_JnIA0FF.jpeg"
+            }
+        ],
+        "abstract": "Homebrew is a free and open-source package manager, initially written for macOS. Linuxbrew, a fork of Homebrew for Linux, was created in 2012. In 2019, we announced the official support for Linux and Windows 10 (with Windows Subsystem for Linux). The Linux-specific code of the package manager was back-ported from Linuxbrew to the main Brew repository in 2018/2019.\r\n\r\nBut the story did not end there. The Linux packages were still living in a separate repository: linuxbrew-core. We had to migrate all the changes from the Linux repository to the main repository (homebrew-core). There were more than 5000 lines of code to be back-ported. We also started building Linux packages in homebrew-core, so we had to set up Linux CI along the existing macOS one. As this task is now almost completed and we will soon decommission linuxbrew-core, I would like to come back on the details of this epic migration. This talk will make a small retrospective on why it took us almost 2 years to finish the migration. I will also take the opportunity to discuss the setup of our Linux CI, and the issues we faced while doing so."
+    },
+    {
+        "title": "Bitnami: 15 years bringing open source to the masses",
+        "speakers": [
+            {
+                "code": "KCKTX3",
+                "name": "Martin Perez",
+                "biography": "Senior Staff Engineer at VMware with more than 20 years of experience working in high performance distributed systems.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Bitnami is an application packaging and publishing startup that was acquired by VMware in 2019. It is a leading provider of prepackaged open source software that runs natively in environments where a large portion of developers and other users want to build or deploy applications in the major public clouds, on laptops, and on Kubernetes. Over the last few years with the increased popularity of containers and platforms like Kubernetes, Bitnami's growth has raised exponentially and several of its containerised applications are now well over +1B downloads each.\r\n\r\nThe secret sauce for Bitnami success has always been trying to make Open Source safe and easy to use. Sounds simple, but it is actually very challenging. A robust pipeline must be able to build many different flavours of open source software targeting many different operating systems and clouds, and it has to be simple. Abstracting users from complexity. Additionally, Bitnami focuses on making Open Source safer by having those application packages running within a continuous update loop taking care of releasing updates when new vulnerabilities or attacks are found.\r\n\r\nIn this talk we would like to go over how we have made this possible over the last 15 years."
+    },
+    {
+        "title": "HELLO WORLD: A Survey of Trust-Based Code Reuse",
+        "speakers": [
+            {
+                "code": "JWRLUF",
+                "name": "George P. Sieniawski",
+                "biography": "As Senior Technologist at IQT Labs, George P. Sieniawski leads research, prototyping, and digital ethnography projects in a wide range of settings. These incl. a multi-year, pre-COVID-19 collaboration with the CDC/NCIRD focused on visualizing uncertainty within infectious disease forecast data. A more recent six-month effort, called PCAPviz, involved developing and delivering new network traffic exploration capabilities to security administrators.",
+                "avatar": null
+            },
+            {
+                "code": "VV78YV",
+                "name": "John Speed Meyers",
+                "biography": "John Speed Meyers is an engineer in IQT Labs. His R&D work focuses on open source software, especially productivity benefits, security risks, and analysis of open source software ecosystems.",
+                "avatar": "https://pretalx.com/media/avatars/meyers_headshot_bRCnWUy.jpg"
+            }
+        ],
+        "abstract": "Open source software communities rely heavily on user trust. However, typosquatting, watering hole attacks, and developer infrastructure exploits can easily undermine the same honor system that enables easy software package reuse. To better understand trust-based code reuse within language-based ecosystems like npm and Python Package Index (PyPI), IQT Labs recently surveyed 150 software engineers, data scientists, and web developers. Despite high levels of educational attainment, the majority of survey takers agreed with the statement “I wish I knew more about security vulnerabilities associated with code reuse.” When asked who is responsible for keeping code safe, more than half of respondents indicated security is a responsibility individual developers share with package registries. However, this diffusion of responsibility and assumption that package registries have adequate resources to address today's shared code vulnerabilities can lead to developer complacency, particularly since many participants admitted they “do not engage in pre-install code vetting.” In addition to discussing the value of more training, clearer policies, and more robust organizational support, this talk explores the importance of package manager usability."
+    },
+    {
+        "title": "Package registries for the Julia package manager",
+        "speakers": [
+            {
+                "code": "AS3MKE",
+                "name": "Kristoffer Carlsson",
+                "biography": "I'm a long-time contributor to the Julia language and its surrounding ecosystem (including its package manager).",
+                "avatar": null
+            }
+        ],
+        "abstract": "This talk discusses the current implementation of package registries for the Julia package manager and some of the lessons learned along the way."
+    },
+    {
+        "title": "Python in Fedora: Integrating a language ecosystem in a distro",
+        "speakers": [
+            {
+                "code": "SCAGQW",
+                "name": "Petr Viktorin",
+                "biography": "Petr is a Python core developer and Fedora packager. He works in the Python maintenance team at Red Hat.",
+                "avatar": null
+            },
+            {
+                "code": "TARERD",
+                "name": "Miro Hrončok",
+                "biography": "I am a member of the [Fedora](https://getfedora.org/)'s [Python SIG](https://fedoraproject.org/wiki/SIGs/Python).\r\n\r\nAs a Linux distribution packager and packager mentor, I’ve seen hundreds of upstream projects and hundreds of distro packages. I help design packaging upstream and downstream.\r\n\r\nI work at [Red Hat](http://www.redhat.com) Czech in the *Python Maintenance* team. I teach advanced Python (and Python packaging) at the [Czech Technical University](https://www.cvut.cz/) and I teach beginners in the Czech [PyLadies beginners courses](https://pyladies.cz/). I’m a contributing member of the [Python Software Foundation](https://www.python.org/psf/) and a member of the [Fedora Engineering Steering Committee](https://fedoraproject.org/wiki/Development/SteeringCommittee) and the [Fedora Packaging Committee](https://fedoraproject.org/wiki/Packaging_Committee), where I represent the technical and packaging leadership in Fedora.",
+                "avatar": null
+            }
+        ],
+        "abstract": "The Fedora Python SIG and the Python maintenance team at Red Hat\r\nare systems integrators who work at the intersection of two worlds:\r\na cross-platform ecosystem and a platform open to all kinds of software.\r\n\r\nThis talk introduces both Python packaging and RPM,\r\nexplains why we go through the trouble to repackage Python projects in RPM,\r\nand covers some of the issues we're solving."
+    },
+    {
+        "title": "Package Management for DevOps",
+        "speakers": [
+            {
+                "code": "B9NLTG",
+                "name": "Jasmine Dahilig",
+                "biography": "Jasmine is a software engineer at HashiCorp. She is an operating systems enthusiast and an avid fan of kitty café themed games.",
+                "avatar": "https://pretalx.com/media/avatars/jasmine_dahilig_profile_um7602T.png"
+            }
+        ],
+        "abstract": "Multi-cloud and microservices are making us redefine the meaning of a \"package.\" Modern applications span languages, operating systems, networks, and machines. To deploy a whole service, you need binaries, configuration files, environment variables, host metadata, and services must be connected and secured at runtime. For a developer, it becomes a best practice to save the entire runtime of a service as deployment configuration in version control. Deployment configurations, combined with powerful workload orchestrators, make it easy to guarantee reproducible runtime, but managing these configurations with version control and open-source dependencies starts to resemble package management. For system operators, ensuring that the computing clusters have relevant software packages installed for successful deployments can also be a challenge, as the application package landscape changes rapidly and manual provisioning slows development. \r\n\r\nTo make it easier for developers and operators to embrace DevOps, we built a package manager for deployments running on Nomad, a distributed workload orchestrator. This talk will cover a range of topics related to package management and DevOps workflows, including the best practices we learned while building a package manager to guide users on their journey to multi-cloud."
+    },
+    {
+        "title": "Versioning for User-Facing Changes vs API Breakages",
+        "speakers": [
+            {
+                "code": "RPCMET",
+                "name": "Blake Anderson",
+                "biography": "I'm a graduate student in Computer Science at the University of Florida researching programming language design. I currently work on [Rhovas](https://rhovas.dev), a programming language for API design and enforcement emphasizing software maintainability.\r\n\r\nAsk Me Anything: `WillBAnders@gmail.com`",
+                "avatar": "https://pretalx.com/media/avatars/WillBAnders-Logo-Transparent_W1b0ECL.png"
+            }
+        ],
+        "abstract": "Semantic Versioning (`MAJOR.MINOR.PATCH`) is a common approach to versioning\r\nlibraries that separates changes into fixes (`PATCH`), additions (`MINOR`), and\r\nbreakages (`MAJOR`). Though simple, SemVer has two primary limitations that can\r\nmake it difficult for developers to work with:\r\n\r\n 1. User-facing changes, such as new features or redesigns, are not separated\r\n    from API breakages. Therefore, the compatibility between versions is harder\r\n    for maintainers to understand as the impact of MAJOR updates can vary\r\n    significantly (ex. Python `1->2` vs `2->3`). In consequence, some projects\r\n    now use year-based versioning or 'ZeroVer' (where `MAJOR` is always `0`),\r\n    thus avoiding  the question of API compatibility entirely.\r\n\r\n 2. API breakages are always represented by the `MAJOR` version and do not take\r\n    into account different types of breakages, such as source vs binary\r\n    compatibility. Additionally, tooling can be used to repair many common types\r\n    of breakages (such as renaming) which do not have significant impact on how\r\n    the library is used.\r\n\r\nThe purpose of this talk is to raise awareness of these limitations, demonstrate\r\nthe use cases for having multiple levels of API versioning, and propose\r\nalternative versioning methods that can incorporate different types of API\r\nbreakages."
+    },
+    {
+        "title": "Running a Python Package Index for Raspberry Pi",
+        "speakers": [
+            {
+                "code": "EWRKHR",
+                "name": "Ben Nuttall",
+                "biography": "Software engineer building prototypes at BBC News Labs. Formerly at the Raspberry Pi Foundation. Creator of gpiozero and piwheels. Into Python, Linux and all things open source.",
+                "avatar": null
+            }
+        ],
+        "abstract": "piwheels is a mirror of the Python Package Index, providing binary distributions compiled for the Raspberry Pi's Arm architecture.\r\n\r\nPackage maintainers usually provide wheels compiled for PC/Mac but not for the Arm architecture, so piwheels natively compiles all packages and makes them available to Raspberry Pi users, the regular way, using pip, without any change in behaviour required.\r\n\r\nProviding pre-compiled binary wheels saves users time and effort, reducing friction to getting started with Python projects on Raspberry Pi."
+    },
+    {
+        "title": "Micro-packaging reusable data science pipelines in Python",
+        "speakers": [
+            {
+                "code": "CYS9Y7",
+                "name": "Lorena Balan",
+                "biography": "I'm Software Engineer & Pythonista since 2017, currently working on QuantumBlack's and McKinsey's first open source project. In my spare time you can find me on a volleyball court, in an art gallery, or (in non-pandemic times) on a plane for a city-break.",
+                "avatar": null
+            }
+        ],
+        "abstract": "We believe that sharing and reusing data science code is the future for scaling machine learning across the world because it allows us to work more efficiently. To achieve this grand vision, we had to look at how micro-packaging could be done in Python, the language of choice for most data scientists. Micro-packaging is a widely debated topic in the npm world, and it hasn't taken off in the Python packaging ecosystem.\r\n\r\nThis talk will present the journey that brought us to this point, the challenges we've faced implementing this functionality and the solution we created in Kedro, an open-source Python framework for data science. Whether you're a data practitioner or a software engineer curious to reuse code between projects, you can draw some inspiration from this talk."
+    },
+    {
+        "title": "Packaging TeX Live - the challenge of multi-platform support",
+        "speakers": [
+            {
+                "code": "C7AFTJ",
+                "name": "Norbert Preining",
+                "biography": "Mathematician and Logician by education, Norbert is now working in Fujitsu Research. His core interests are mathematical logic, computer science, machine learning, AI, security, software verification and specification. He is also the co-head of the TeX Live development team, Debian Developer (KDE/Plasma, Cinnamon, TeX, ...) and likes to touch all kind of computing devices.",
+                "avatar": null
+            }
+        ],
+        "abstract": "The TeX environment has grown slowly but steadily to a huge collection of programs, fonts, macros, support packages. Current TeX Live ships about 5Gb in more than 3500 different units. As teTeX stopped to be developed several years ago, TeX Live has taken over as the main TeX distribution in practical all areas, not only on Unix, but also Mac (MacTeX is based on TeX Live) and is also gaining on Windows (where MikTeX is still strong).\r\n\r\nIn this talk we recall shortly the history of TeX Live, its transition from CD/DVD based distribution to net based distribution, and the difficulties one faces when distributing a considerable piece of software to a variety of operating systems and hardware combinations (currently about 15 different arch-os combinations). Topics touched are cross-platform distribution, security, release management etc.\r\n\r\nFurthermore, we will discuss the topic of re-distributing TeX Live into Linux distributions like Debian, Red Hat. Integrating TeX Live into any distribution is a non-trivial task due to big amount of post installation steps. And although over the last years the quality of packages has improved, we still often get bug reports that stem from incorrect packaging."
+    },
+    {
+        "title": "Living with OPAM",
+        "speakers": [
+            {
+                "code": "8KMLDE",
+                "name": "Daniil Baturin",
+                "biography": "Co-founder and maintainer of VyOS (vyos.net), functional programming enthusiast, frequent contributor to the OCaml ecosystem.",
+                "avatar": "https://pretalx.com/media/avatars/db_logo_croppable_bAMjQkx.png"
+            }
+        ],
+        "abstract": "OPAM is the de facto standard package manager for the OCaml programming language. As a frequent contributor to its repository, I present an overview of its evolution, features, and recent ecosystem projects such as automated lower bounds checking, as well as my own experience with it."
+    },
+    {
+        "title": "Building Debian packages the RPM way with debbuild",
+        "speakers": [
+            {
+                "code": "GSJ7WA",
+                "name": "Neal Gompa",
+                "biography": "Senior DevOps Engineer by day, Linux systems aficionado and developer by night! Neal is a developer and contributor in Fedora, Mageia, and openSUSE, focusing primarily on the base Linux system components, such as package and software management. He's a big believer in \"upstream first\", which has led him all over the open source world.",
+                "avatar": "https://pretalx.com/media/avatars/neal-gompa-jun2020_UQfT5jt.png"
+            }
+        ],
+        "abstract": "Traditionally, building Debian packages is quite complicated. With the \"debian\" folder that needs to be merged into the source tree with all the various files, the various mechanisms of automagic that you may need to figure out in case it goes sideways, and the hugely over-descriptive yet difficult to understand Debian Policy Manual, it's no surprise that people get it wrong so often! But what if there was a simpler path to making (mostly) conformant Debian package? Enter debbuild, a tool that lets you use the simpler RPM spec file format to build a Debian package. With debbuild, it's possible to easily make portable packaging across all major distributions with very little pain! Come and see how debbuild can help make it easier to ship Linux software the right way!"
+    },
+    {
+        "title": "Building Flatpak apps without flatpak-builder",
+        "speakers": [
+            {
+                "code": "GCWSXB",
+                "name": "Bartłomiej Piotrowski",
+                "biography": "Maintainer of Flathub, app store and build service for Flatpak, member of GNOME Foundation, Site Reliability Engineer by trade. Spent the last 10 years maintaining packages for Arch Linux.",
+                "avatar": "https://pretalx.com/media/avatars/photo_2021-08-26_13-31-42_xt9DqzV.jpg"
+            }
+        ],
+        "abstract": "Flatpak-builder is a wrapper around various Flatpak commands to simplify packaging software including, but not limited to, from source. But what if your application is already built as part of CI/CD pipeline, or the host Linux distribution has user namespaces disallowed? Let's have a look at what flatpak-builder actually does and how to flatpak software from scratch."
+    },
+    {
+        "title": "Packaging LLVM",
+        "speakers": [
+            {
+                "code": "ZJ3KYE",
+                "name": "Serge « sans » Paille",
+                "biography": "Sometimes a compiler engineer, sometimes a Fedora packager, sometimes a wood chopper",
+                "avatar": null
+            }
+        ],
+        "abstract": "The LLVM project encompasses the LLVM core libraries, clang, lld, lldb, \r\ncompiler-rt, flang and many other projects that gravitates around the use of theLLVM compiler infrastructure. As a whole, they aim at providing a complete tool\r\nchain, and its modular structure as led to the developement of many third-party\r\npackages such as the Zig language or the Source Trail code explorer.\r\n\r\nPackaging LLVM leads to numerous choices, from configuration to build,\r\ntest, installation and granularity point of view. This talk discusses some of \r\nthese choices in the context of the Fedora distribution."
+    },
+    {
+        "title": "Containers: What's package management got to do with it?",
+        "speakers": [
+            {
+                "code": "X7SWJQ",
+                "name": "Nisha Kumar",
+                "biography": "Nisha is a Senior Open Source Engineer at VMware. She works on tools to improve the container build and distribution ecosystem. You can follow her on Twitter @nishakmr.",
+                "avatar": "https://pretalx.com/media/avatars/HKN210806_01ab-2_u50Vn8f.jpg"
+            }
+        ],
+        "abstract": "Containers and software packages share many traits, but there are also many key attributes lacking in the container management ecosystem that are otherwise present in the package management ecosystem. The popular thinking is that containers do not need package management as those tasks either don’t apply or can be delegated to a higher level orchestrator. The consequence of missing patterns from the packaging community is a less robust and less consistent user experience in distributed cloud compared to what we experience in other domains. This talk will discuss similarities (eg: state management, configuration, and organization of packages into meta-packages) and differences (eg: weak versioning, metadata inclusion, and build determinism) in the container ecosystem compared with familiar package management ecosystems and propose potential improvements to container management inspired by learnings from the package management space."
+    },
+    {
+        "title": "Fortran Package Manager: Toward a rich ecosystem of Fortran packages",
+        "speakers": [
+            {
+                "code": "88ALZM",
+                "name": "Sebastian Ehlert",
+                "biography": "Open source contributor to several Fortran projects, including the Fortran standard library and Fortran package manager.\r\nMaintains several Fortran and Fortran-related packages in the conda-forge distribution.\r\n\r\nFortran-lang introduction can be found [here](https://fortran-lang.discourse.group/t/joining-the-team/1626).",
+                "avatar": null
+            }
+        ],
+        "abstract": "Fortran is the oldest programming language still in use today, targeting high-performance scientific and engineering applications.\r\nTraditionally, Fortran software has used build systems that are not portable or are difficult to use or extend.\r\nThis has presented a significant barrier to entry for users, and has made it difficult to use libraries as dependencies, or distribute your own library for use in other projects.\r\nFortran Package Manager (fpm) is a new language-specific package manager and build system.\r\nThe key goals are to improve the user experience and nurture the growth of a rich ecosystem of Fortran libraries.\r\n\r\nFpm assumes sane defaults so that most users can enjoy a zero-configuration experience, while providing options to customize behavior.\r\nFpm can scaffold a new Fortran project, fetch and build remote dependencies, and run tests and project executables.\r\nIt supports multiple compilers, runs on all major operating systems and can bootstrap itself.\r\nWhile new and rapidly developing, it is already used as a build system for large projects and has been met with an overwhelming response from the Fortran community.\r\nWe want to discuss technical challenges that are specific to building Fortran projects and further next steps."
+    },
+    {
+        "title": "Serving and Managing Reproducible Conda Environments via Conda-Store",
+        "speakers": [
+            {
+                "code": "E3CWKW",
+                "name": "Christopher Ostrouchov",
+                "biography": "Scientific Software developer at Quansight.",
+                "avatar": null
+            },
+            {
+                "code": "LSHGBM",
+                "name": "Jaime Rodríguez-Guerra",
+                "biography": "Devops curious scientific software developer, now focusing on Python packaging.",
+                "avatar": null
+            }
+        ],
+        "abstract": "End users think in terms of environments not packages. The core philosophy of conda-store is to serve reproducible conda environments in as many ways as possible to users and services. Conda-store was developed due to a significant need we found in enterprise architectures. There are many ways to serve environments and each plays an important role. Thus conda-store serves the same environment via a filesystem, lockfile, pinned yaml specification, conda pack archive, and docker image. This logic could easily be extended to also support the creation of VM iso's and singularity containers \r\n\r\nDuring this talk I will highlight some common problems with environments we have seen while consulting and show how conda-store aims to solve them:\r\n - Friction between IT and end users in controlled environments where new packages are needed\r\n - Enabling a given notebook developed within jupyterlab to be reproducibly run in workflows reliably for years to come\r\n - Helping to removing the need for specially crafted docker containers\r\n\r\nThis talk will be full of demos along with a site that everyone in the talk can try out."
+    },
+    {
+        "title": "Quantifying Outdatedness Using the Technical Lag Measurement",
+        "speakers": [
+            {
+                "code": "K9NQ3F",
+                "name": "Zerouali Ahmed",
+                "biography": "Dr. Ahmed Zerouali is a postdoctoral on the joint Belgian FNRS-FWO Excellence of Science project SECOASSIST and a research fellow at the Software Languages Lab of the Vrije Universiteit Brussel in Belgium. He obtained his Ph.D. in software engineering from the University of Mons in 2019 with a thesis entitled ''A Measurement Framework for Analyzing Technical Lag in Open-Source Software Ecosystems\". His research focuses mainly on empirical software engineering, in particular software evolution, mining software repositories and software analytics. He has authored and reviewed research papers published in top software engineering conferences as well as in major journals such as EMSE, TSE, JSEP, SCICO etc. He was also a co-organizer of two international workshops, SoHeal (4th International Workshop on Software Health in Projects, Ecosystems and Communities) co-located with ICSE 2021 and ChaossCon 2019 of the Linux foundation.",
+                "avatar": "https://pretalx.com/media/avatars/DSC_0677_ygiWvul.JPG"
+            }
+        ],
+        "abstract": "Frequently, reusable packages for major programming languages and operating systems are available in public package repositories where they are developed and evolved together within the same environment. Developers rely on package management tools to automate deployments, specifying which package releases satisfy the needs of their applications. However, these specifications may lead to deploying package releases that are outdated or undesirable because they do not include bug fixes, security fixes, or new functionality. In contrast, automatically updating to a more recent release may introduce incompatibility issues. Moreover, while this delicate problem is important at the level of individual packages, it becomes even more relevant at the level of large distributions of software packages where packages depend, directly or indirectly, on a large number of other packages.\r\nThe goal of this presentation is to show how to capture this delicate balance between the need of updating to the ideal release and the risk of having breaking changes by presenting the measurement of technical lag, a concept that quantifies to which extent a deployed collection of packages is outdated with respect to the ideal deployment. Then, we empirically analyze its evolution in npm."
+    },
+    {
+        "title": "conda-forge, (lib)mamba & libsolv: universal and reusable parts",
+        "speakers": [
+            {
+                "code": "M7CWJZ",
+                "name": "Wolf Vollprecht",
+                "biography": null,
+                "avatar": null
+            }
+        ],
+        "abstract": "This talk introduces conda-forge (a community led collection of recipes for Windows, macOS and Linux), the mamba package manager which works cross-platform and independent of any language and the parts that make it up (libsolv and librepo). Furthermore, we will demonstrate how libmamba can be used to create bindings to mamba or specialized package managers, for example for plugin management in applications."
+    },
+    {
+        "title": "Are Project Tests Enough for Automated Dependency Updates? A Case Study of 262 Java Projects on Github",
+        "speakers": [
+            {
+                "code": "YET8GT",
+                "name": "Joseph Hejderup",
+                "biography": "Joseph Hejderup is a Ph.D. student at the Delft University of Technology, The Netherlands. His research interests include Dependency Management, Program Analysis & Ecosystem Analytics.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Updating to a new version of a third-party library is traditionally not a trivial task. Github's dependabot, Renovate, and similar services automatically create a new branch with the latest version of a library dependency and then execute project tests to detect any breaking changes. While such services are gaining a lot of traction, no study looks into whether test suites of average Github Projects have sufficient coverage and are adequate to detect incompatible library changes. \r\n\r\nTo better understand the state of test coverage and effectiveness of project test suites for detecting incompatible library changes, I will, in this talk, present a study comprising 262 Java projects on Github. By artificially injecting faulty changes in library dependencies, we identify that test suites on average have coverage of 58% of their direct dependencies and 20% of their transitive dependencies. The average test suite effectively detects 47% of faulty updates in direct dependencies and 35% in transitive dependencies. Based on our findings, I will explain a set of recommendations for both developers and toolmakers that could potentially improve the reliability and expectations of automated dependency updating."
+    },
+    {
+        "title": "Defending against attacks on package managers",
+        "speakers": [
+            {
+                "code": "BSMMBJ",
+                "name": "Joshua Lock",
+                "biography": "Joshua is a collaborator and maintainer on The Update Framework (TUF) and Supply-chain Levels for Software Artifacts (SLSA) projects. He works at VMware as the security team lead in their Open Source Technology Center. In a past life he spent many years working on and with the Yocto Project. Joshua has spoken at several events including Linux Security Summit, Embedded Linux Conference, and KubeCon + CloudNativeCon.",
+                "avatar": "https://pretalx.com/media/avatars/jlock_medium_cJDUjNw.jpeg"
+            },
+            {
+                "code": "ETFNEA",
+                "name": "Marina Moore",
+                "biography": "Marina Moore is a PhD student at NYU Tandon’s Secure Systems Lab focusing on secure software updates and supply chain security. While at NYU she has worked primarily on research and development for The Update Framework (TUF), Uptaneand Notary.",
+                "avatar": "https://pretalx.com/media/avatars/Headshot_u29hcWZ.jpg"
+            }
+        ],
+        "abstract": "In this talk, Joshua Lock and Marina Moore will discuss common attacks on package managers, and the kinds of threats that package managers face as part of the software supply chain. They will then present The Update Framework (TUF), a mechanism for securing package managers against these threats in a simple, resilient way that will protect users against even nation state attacks. Package managers can adopt all features of TUF wholesale, or start with the subset that will be most helpful for their users. This talk will conclude with a demonstration of TUF’s versatility; explaining how TUF has been adopted by the Python Packaging Index (PyPI) to provide end-to-end protection of packages from the developer to the end user, and how this adoption can be used as a model for other package managers looking to improve software distribution and update security."
+    },
+    {
+        "title": "Go mod's lesser known features for supply chain security",
+        "speakers": [
+            {
+                "code": "R3FZPN",
+                "name": "Tony Worm",
+                "biography": "https://www.linkedin.com/in/dr-tony-worm/\r\n\r\nhttps://github.com/verdverm\r\n\r\nhttps://github.com/hofstadter-io",
+                "avatar": null
+            }
+        ],
+        "abstract": "Golangs module and dependency system addresses more than version management. This talk will explore the lesser known features which support security in the software supply chain."
+    },
+    {
+        "title": "Lxroot - Run, develop, and test packages and package managers in a lightweight virtual environment.",
+        "speakers": [
+            {
+                "code": "XTJYK8",
+                "name": "Parke Bostrom",
+                "biography": "Parke Bostrom started writing computer programs in the late 1980s.  He lives in California.  He believes a computer can only truly be \"personal\" if the user, and not the package manager, controls how software is installed, and how software runs.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Lxroot is a lightweight software virtualization tool (for Linux).  With Lxroot, a non-root user can safely and easily install, run, develop, and test both packages and package managers.  Compared with other virtualization tools, Lxroot is safer, smaller, conceptually simpler, and arguably more flexible (within the limits of what is possible as a non-root user).\r\n\r\nLxroot allows a non-root user to create chroot-style virtual environments via Linux namespaces.  Lxroot simply creates and configures these chroot-namespaces, and then runs programs inside them.  All the virtualization work is done directly by the Linux kernel itself, via its namespace capabilities.\r\n\r\nLxroot allows the simultaneous use of multiple package managers, both system package managers (such as pacman, apk, xbps, etc.), and non-system package managers (such as\r\npip, npm, Flatpak, conda, mamba, Spack, etc.).\r\n\r\nLxroot allows a non-root user, on a single host kernel, to easily mix-and-match packages, userlands, and package-managers from multiple sources, including from multiple different Linux distributions.\r\n\r\nDue to its simple and flexible nature, Lxroot has a variety of use cases related to the development, testing, and use of packages and package managers.\r\n\r\nMore information here:  https://github.com/parke/lxroot"
+    },
+    {
+        "title": "Python Packaging: Why Don’t You Just…?",
+        "speakers": [
+            {
+                "code": "XMQYJM",
+                "name": "Tzu-ping Chung",
+                "biography": "Tzu-ping builds his career around open source software, and enjoys committing his efforts to help make the world better. He builds all kinds of software for a living, from embedded system to single-page web applications, and contributes to the community when he can.\r\n\r\nTP is currently employed by [Astronomer](https://www.astronomer.io/) to work on the Apache Airflow project. Most of his off-time is spent improving Python’s packaging landscape, organising PyCon Taiwan, and building software with Python and other modern technologies. He loves (human) languages, and knows probably too much about linguistics and phonetics to make him welcome in parties.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Every packaging system has its specific way of doing things, but to an outsider. Python’s seems to have a knack of finding the most non-straightforward and weird solution for every choice. This talk attempts to trace some of the peculiarities to find out the reasoning behind the decisions, and how they stand in the modern packaging landscape."
+    },
+    {
+        "title": "Streamlining VMware's Open Source Licensing Compliance With Bazel",
+        "speakers": [
+            {
+                "code": "Z3EMXB",
+                "name": "Daniel Machlab",
+                "biography": "A big fan of Open Source Software and an efficient development lifecycle, Daniel Machlab has dedicated his interests to making OSS license compliance seamless for his fellow VMware developers—and the entire Bazel community. Daniel's passion and appreciation for the Open Source Community dates back to his high school days when used OSS in his first apps. He had no idea that years later he would contribute a solution back to the community to make OSS easier to use.",
+                "avatar": null
+            }
+        ],
+        "abstract": "With hundreds of thousands of open source software (OSS) projects to choose from, OSS is a vital component of almost any codebase. However, with over a thousand unique licenses to comply with, complexity of managing OSS use cannot be overlooked. Identifying and tracking OSS to comply with license requirements adds friction to the development process and can result in product-release delays. At VMware, developers must run a scanner to identify a Bill of Material (BOM) of what OSS is being used. This extra step adds toil and leaves room for error. Some scanners are imprecise, compounding these issues. \r\n\r\nWe solve this problem using Bazel to create an accurate BOM containing OSS and third-party packages during a build. To do this, we made a Bazel aspect that analyzes the dependency graph and collects information about each package from VMware's internal Artifactory. Additionally, it consumes a list of approved and denied OSS from VMware's legal team. By moving OSS validation to build time, OSS decisions are made earlier in the development and review process, making them less costly."
+    },
+    {
+        "title": "IPS, How Apt became docker before docker existed",
+        "speakers": [
+            {
+                "code": "8VWYRK",
+                "name": "Till (Toasty) Wegmueller",
+                "biography": "- Maintainer in the OpenIndiana Project\r\n- Owner of OpenFlowLabs\r\n- Does stuff in Brazil\r\n- Helps out at Chaostreff Bern (CCC, Swiss Hackers Association stuff) \r\n- GitHub https://github.com/Toasterson\r\n- Twitter [@TheRealToaster](https://twitter.com/TheRealToaster)",
+                "avatar": null
+            }
+        ],
+        "abstract": "Several OpenSolaris descendants use the Image Packaging System, short IPS. IPS itself is a spiritual descendant of apt from debian. Addressing several shortcomings of apt and adding the concept of images, Update-alternatives (mediators) and other related tools."
+    },
+    {
+        "title": "IPFS ❤ Python Wheels: Efficient, Secure and Reproducible Repository",
+        "speakers": [
+            {
+                "code": "HVFTSZ",
+                "name": "Nguyễn Gia Phong",
+                "biography": "On the Internet, I am more commonly known as McSinyx, a Vietnamese free software enthusiast.  My areas of interest surround programming languages, concurrency, reproducibility and decentralization.",
+                "avatar": null
+            },
+            {
+                "code": "J9CTXV",
+                "name": "Huy Ngo",
+                "biography": "Packager of IPWHL project",
+                "avatar": "https://pretalx.com/media/avatars/rubber_duck_ngg82A1.png"
+            }
+        ],
+        "abstract": "Python wheel is a beautifully simple format for cross-platform binary distribution.  Combining it with the simple repository API, we have the Python Package Index (PyPI) tirelessly serving Pythonistas.  PyPI is great as a package index, but in certain ways it is unsuitable for end-user usages: it is subject to multiple supply chain attacks, its centralised nature leads to difficult mirroring while being a single point\r\nof failure, and expensive dependency resolution is left for client-side.\r\n\r\nThe interplanetary wheels (IPWHL) are platform-unique, singly-versioned Python binary distributions backed by IPFS.  It does not try to replace PyPI but aims to be a downstream wheel supplier in a fashion similar to GNU/Linux distributions, whilst take advantage of a content-addressing peer-to-peer network to provide a reproducible, easy-to-mirror source of packages."
+    },
+    {
+        "title": "Adventures in packaging rust programs",
+        "speakers": [
+            {
+                "code": "EBYFCQ",
+                "name": "Efraim Flashner",
+                "biography": "Efraim has been a contributor to GNU Guix since 2015 and apparently likes porting Guix to new architectures, having contributed to at least the aarch64, powerpc, and riscv64 ports. He can regularly be found using IRC from his phone to answer questions and has yet to learn Emacs.\r\nWhen asked, he says watching all the compiling in the terminal window is soothing, with intermittent bouts of shouting 'NO' at the screen. He lives in Northern Israel with his family.",
+                "avatar": "https://pretalx.com/media/avatars/hpqQiXwcjHutZSQWkVopuuhY_KxBbX8S.jpeg"
+            }
+        ],
+        "abstract": "Rust has been around as a language for about 10 years now and a necessary part of distribution packaging for at least the last 4 with Firefox depending on it. In Guix we've been struggling to have a sane way to package rust applications and all their dependencies while trying to keep a handle on visualizing build chains and an ever expanding package set."
+    },
+    {
+        "title": "Package information on ELF objects",
+        "speakers": [
+            {
+                "code": "33LYX7",
+                "name": "Zbigniew Jędrzejewski-Szmek",
+                "biography": "python, systemd, fedora linux",
+                "avatar": "https://pretalx.com/media/avatars/jedrzej-64x64_Be1Qsy4.jpg"
+            },
+            {
+                "code": "CBHZBE",
+                "name": "Luca Boccassi",
+                "biography": "Debian Developer, member of maintainers teams of DPDK/systemd/ZeroMQ, Software Engineer at Microsoft",
+                "avatar": null
+            }
+        ],
+        "abstract": "Programs crash. And when they do, they dump core, and we want to tell the user which package, including the version, caused the failure. This talk describes a compact JSON-based format that is embedded directly in the binaries as an ELF note. By embedding the this information directly in the binary object, package information is immediately available from a core dump, independently of any external packaging metadata. This is a cross-distro collaboration, with the eventual goal of having the same metadata automatically added by all distributions."
+    },
+    {
+        "title": "Beyond version solving: implementing general package solvers with Answer Set Programming",
+        "speakers": [
+            {
+                "code": "RD7SJX",
+                "name": "Todd Gamblin",
+                "biography": "Todd Gamblin is a Senior Principal MTS in Livermore Computing's Advanced Technology Office at Lawrence Livermore National Laboratory. He created Spack, a popular open source HPC package management tool with a rapidly growing community of contributors. He leads the Packaging Technologies Project in the U.S. Exascale Computing Project, LLNL's DevRAMP project on developer productivity, and an LLNL Strategic Research Initiative on software integration and dependency management. His research interests include dependency management, software engineering, parallel computing, performance measurement, and performance analysis.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Most package managers need a dependency solver, but dependency solving is an NP-hard problem, and writing a correct solver from scratch is difficult to do correctly, let alone a fast solver. Simply understanding the solution space is a challenge, from simple SAT solvers, to specialized solutions like PubGrub and libsolv, to Satisfiabilty Modulo Theories (SMT) and Answer Set Programming (ASP) solvers. Solvers may need to optimize for multiple objectives -- preferring the most recent versions of dependencies is common, but multi-valued build options, optional dependencies, virtual dependencies, and build options like compilers, architectures, and ABI compatibility can also factor into a solve.\r\n\r\nWe have recently shipped a new solver in the Spack package manager that relies on the `clingo` Answer Set Programming (ASP) framework to accomplish many of these goals. We'll talk about how we handle complex features like optional dependencies, generalized conditions, virtual dependencies (interfaces), compiler selection, ABI options, and multiple optimization criteria in around 500 lines of declarative code. We'll talk about some of the semantics of ASP that lend themselves to very general package solving (vs other models like SMT). Finally, we'll show some performance numbers with large package repositories."
+    },
+    {
+        "title": "Integrating upstream projects to Fedora Linux",
+        "speakers": [
+            {
+                "code": "WR9GC9",
+                "name": "František Lachman",
+                "biography": "Software engineer at Red Hat; Project owner in the Packit team; teacher at Faculty of Informatics, Masaryk University, Brno; member of the Scout Movement and Python enthusiast.",
+                "avatar": "https://pretalx.com/media/avatars/avatar-kniha_293XQHp.png"
+            },
+            {
+                "code": "MQMWJG",
+                "name": "Tomas Tomecek",
+                "biography": "packaging and integration wizardry",
+                "avatar": null
+            }
+        ],
+        "abstract": "We are offering Packit, a free GitHub app and GitLab integration which enables you to build and test your upstream project on an RPM-based Linux distribution like Fedora Linux, CentOS Stream, Mageia or openSUSE. Once you get RPM builds of your project, you can be pretty sure that your project will work once released and delivered via the downstream distribution. The core functionality of Packit is built around pull requests (as a standard CI system) and releases (bring the release to Fedora rawhide). You can read more about Packit at https://packit.dev/\r\n\r\nIn this session, Franta and Tomas will describe the Packit project, Fedora’s packaging workflow, showcase some of the well-known projects which use Packit and offer a brief perspective on what it’s like to develop and maintain the integration service."
+    },
+    {
+        "title": "An Invitation to Order-Theoretic Models of Package Dependencies",
+        "speakers": [
+            {
+                "code": "7AGV9U",
+                "name": "Gershom Bazerman",
+                "biography": "Gershom Bazerman is a longtime contributor to the Haskell ecosystem. He is a maintainer of the Hackage package repository, and contributor to the Cabal package management system. He also served on the Haskell.org committee for five years, and is a co-founder of both the NY Haskell Users Group and the NY Homotopy and Type Theory reading group. He currently works as a senior software engineer at Awake Security.",
+                "avatar": "https://pretalx.com/media/avatars/me_ePv4Fo8.jpg"
+            }
+        ],
+        "abstract": "This talk will introduce some elements of ongoing research in the mathematical structure of package dependencies. This work helps to explain how to think about dependencies, how to compare expressiveness of dependency systems (and strength of solvers), and also how to model an algebra of operations of package repositories."
+    },
+    {
+        "title": "How Nix and NixOS Get So Close to Perfect",
+        "speakers": [
+            {
+                "code": "3A7HHR",
+                "name": "Xe",
+                "biography": "The author of [christine.website](https://christine.website), Xe is the Archmage of Infrastructure at Tailscale. They have written many articles about Nix and NixOS at both beginner and expert levels. They are passionate about making computers understandable and have",
+                "avatar": "https://pretalx.com/media/avatars/index5_HgmIgJF.png"
+            }
+        ],
+        "abstract": "Nix, the package manager for the distribution NixOS, is a package manager built on top of functional programming principles. In this talk I'll discuss how they get close to what I'd consider perfect and what future improvements on the concept should learn from Nix and NixOS."
+    },
+    {
+        "title": "The Promises and Perils of Adopting Static Analysis in Dependency Analyzers",
+        "speakers": [
+            {
+                "code": "YET8GT",
+                "name": "Joseph Hejderup",
+                "biography": "Joseph Hejderup is a Ph.D. student at the Delft University of Technology, The Netherlands. His research interests include Dependency Management, Program Analysis & Ecosystem Analytics.",
+                "avatar": null
+            }
+        ],
+        "abstract": "`npm audit`, `cargo audit`, `dependabot`, and similar analyzers have one thing in common: they provide feedback by only analyzing project manifests. I have one big problem with this: we are generalizing how projects use dependencies through metadata analysis! Without looking into how projects \"actually\" use dependencies, we deprive developers of insightful feedback that could save development time and effort. In this talk, I will discuss the differences and similarities between metadata-level versus code-level (i.e., static analysis) dependency analyses. Specifically, I will explain scenarios that are sufficient to use metadata analysis and when it is not. Moreover, I will also discuss the general applicability and challenges of adopting static analysis in dependency analyzers.\r\n\r\nThe talk is based on my research paper: \"Präzi: From Package-based to Call-based Dependency Networks\" You can find the paper here: https://arxiv.org/abs/2101.09563"
+    },
+    {
+        "title": "Why everyone should do reproducible builds",
+        "speakers": [
+            {
+                "code": "Z7LKWZ",
+                "name": "Bernhard M. Wiedemann",
+                "biography": "Bernhard M. Wiedemann is a software developer and sysadmin, since 2016 working at SUSE on reproducible builds. He wrote over 600 patches for various projects, including rpm and python setuptools.\r\n\r\nIn earlier times he managed OpenStack clouds, wrote the openQA OS-testing tool and the long obsolete `translucency` filesystem overlay for Linux-2.4",
+                "avatar": "https://pretalx.com/media/avatars/bernhard-hackergotchi-140b_4N4ms9C.png"
+            }
+        ],
+        "abstract": "Why everyone should do reproducible builds and how can package managers help in getting there."
+    },
+    {
+        "title": "Comparing semantic versioning practices in Cargo, npm, Packagist and Rubygems",
+        "speakers": [
+            {
+                "code": "7VEMTT",
+                "name": "Tom Mens",
+                "biography": "Prof. Dr. Tom Mens obtained a PhD in Science in 1999 at the Vrije Universiteit Brussel, Belgium. He is  full professor at the University of Mons in Belgium, where he  directs the Software Engineering Lab. His research interests include software evolution, quality and health management of software ecosystems, and open source software analytics. He published numerous highly-cited scientific articles in peer-reviewed international software engineering conferences and journals. He is project leader of the joint Belgian FNRS-FWO Excellence of Science project SECOAssist “Automated Assistance for Developing Software in Ecosystems of the Future”.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Semantic versioning (semver) is a commonly accepted open source practice, used  by many package management systems to inform whether new package releases introduce possibly backward incompatible changes. Maintainers depending on such packages can use this practice to reduce the risk of breaking changes in their own packages by specifying version constraints on their dependencies. Depending on the amount of control a package maintainer desires to assert over her package dependencies, these constraints can range from very permissive to very restrictive.\r\nWe empirically compared the evolution of semver compliance in four package management systems: Cargo, npm, Packagist and Rubygems. We discuss to what extent ecosystem-specific characteristics influence the degree of semver compliance, and we suggest to develop tools adopting the wisdom of the crowds to help package maintainers decide which type of version constraints they should impose on their dependencies.\r\nWe also studied to which extent the packages distributed by these package managers are still using a 0.y.z release, suggesting less stable and immature packages. We explore the effect of such \"major zero\" packages on semantic versioning adoption.\r\nOur findings shed insight in some important differences between package managers with respect to package versioning policies."
+    },
+    {
+        "title": "Triforce: repository management",
+        "speakers": [
+            {
+                "code": "GVPUYH",
+                "name": "Kevin Mittman",
+                "biography": "Kevin Mittman is a GNU/Linux enthusiast with a passion for automation. He is a system software engineer at NVIDIA, with a focus on the installer packaging and release process for CUDA, the NVIDIA driver, and other CUDA-X products. Before joining NVIDIA, Kevin began his career in the open source community, maintaining Debian packages for Maemo and later an ArchLinux-based kiosk Linux LiveUSB distro.",
+                "avatar": null
+            }
+        ],
+        "abstract": "As repositories grow in size with packages, the time complexity starts to become O(n*log(n)) to keep the metadata up-to-date, because retaining the history requires re-parsing published packages and those must be available locally.\r\n\r\nAt NVIDIA, the Triforce repository management system handles the release process in O(n). To re-generate the metadata, one or more product release candidates are merged together using OverlayFS, on top of the public repository; this avoids the need for copying hundreds of gigabytes of existing packages, significantly reducing the I/O and storage usage.\r\n\r\nAnother consideration is how long it takes to build the metadata, by default generated from scratch each time. For RPM repositories, createrepo_c has the flag --update which skips over existing packages that have not changed. However for Debian repositories, existing tools such as apt-ftparchive lack such functionality. Comparing the filenames and file sizes is a good enough indicator if the package can be skipped. Parsing dpkg --info, it is possible to form the fields in a deterministic order for each block. From there it is as simple as appending the new metadata to the existing Packages.gz and regenerating the Release file."
+    },
+    {
+        "title": "Challenges with Java in a hermetic world",
+        "speakers": [
+            {
+                "code": "SQ8XGC",
+                "name": "Farid Zakaria",
+                "biography": "I'm a software engineer, father and wishful amateur surfer.\r\nI have over a decade of experience writing software and am currently employed by Google.\r\nMy prior experience has largely centered around building public cloud infrastructure for AWS & Oracle.\r\nI am deeply passionate about reproducibility, developer tooling & ergonomics.\r\n\r\nhttps://fzakaria.com/\r\nhttps://www.linkedin.com/in/fmzakari/",
+                "avatar": null
+            },
+            {
+                "code": "TUBF3G",
+                "name": "Carlos Maltzahn",
+                "biography": null,
+                "avatar": null
+            }
+        ],
+        "abstract": "Nix and similar tools (Spack) promise a reproduciblity story for packages (from source or bitwise).\r\nSpecifically within Nix, several languages have successfully integrated into the ecosystem but some such as Java are oddly absent given their popularity.\r\n\r\nIn a search for how to better integrate Java into a Nix-centric workflow, we go over some current challenges with the fractured Java ecosystem and how the appeal of a federated artifact store has led to sharp edges."
+    },
+    {
+        "title": "The quirks and challenges of pip's test suite and CI",
+        "speakers": [
+            {
+                "code": "RAU38R",
+                "name": "Pradyun Gedam",
+                "biography": null,
+                "avatar": null
+            }
+        ],
+        "abstract": "`pip`, Python's package manager, is developed independently from the Python language by a fairly independent team. It has an extensive test suite, with significant complexity and computational requirements. A mix of I/O heavy tests and CPU heavy tests, combined with the wide matrix of supported platforms and Python versions, introduce some interesting challenges when needing to run an overall CI workflow in a reasonable amount of time. This talk goes into the trials and tribulations of getting the CI for pip to run in less than 30 minutes."
+    },
+    {
+        "title": "dh-dist-zilla: From Dist::Zilla's dist.ini to Debian's .deb in one go",
+        "speakers": [
+            {
+                "code": "ZJ9TRD",
+                "name": "Axel Beckert",
+                "biography": "Sysadmin by day, [Debian Developer](https://people.debian.org/~abe/) by night; maintaining a lot of packaging-related Debian packages like [aptitude](https://tracker.debian.org/pkg/aptitude), [aptitude-robot](https://tracker.debian.org/pkg/aptitude-robot), [debsums](https://tracker.debian.org/pkg/debsums), [dh-dist-zilla](https://tracker.debian.org/pkg/dh-dist-zilla), [equivs](https://tracker.debian.org/pkg/equivs) and [debian-goodies](https://tracker.debian.org/pkg/debian-goodies), but also maintainer of other popular packages like [zsh](https://tracker.debian.org/pkg/zsh), [screen](https://tracker.debian.org/pkg/screen) and [lynx](https://tracker.debian.org/pkg/lynx), also a top 5 contributor to [debhelper](https://tracker.debian.org/pkg/debhelper) and top 15 contributor to [lintian](https://tracker.debian.org/pkg/lintian); sysadmin of the [primary Swiss Debian mirror](http://ftp.ch.debian.org/).",
+                "avatar": null
+            }
+        ],
+        "abstract": "Building proper Debian packages from Dist::Zilla maintained Perl modules, especially from git checkouts without having a Dist::Zilla generated tar ball yet."
+    },
+    {
+        "title": "distri: researching fast Linux package management",
+        "speakers": [
+            {
+                "code": "GQFAQN",
+                "name": "Michael Stapelberg",
+                "biography": "https://distr1.org/\r\n\r\nhttps://michael.stapelberg.ch/\r\n\r\nhttps://twitter.com/zekjur",
+                "avatar": null
+            }
+        ],
+        "abstract": "Linux package managers are too slow; how could we make things better?"
+    },
+    {
+        "title": "How Helm, The Package Manager For Kubernetes, Works",
+        "speakers": [
+            {
+                "code": "ZWTEFM",
+                "name": "Matt Farina",
+                "biography": "Matt is a Software Architect at SUSE who works on the development of new container tools. He is currently a maintainer of Helm and Artifact Hub and an emeritus chair of Kubernetes SIG Apps and Architecture. Matt is the author of the books _Go in Practice_ and _Learning Helm_.\r\n\r\nYou can learn more about Matt at [mattfarina.com](https://mattfarina.com)",
+                "avatar": null
+            }
+        ],
+        "abstract": "Helm is the long standing package manager for Kubernetes. Helm packages, called charts, are installed from distributed repositories. In this session you'll learn how Helm came to be, how Helm works, and why it was designed this way. This will include how Helm handles dependencies, how charts are created, signing and verification, and more."
+    },
+    {
+        "title": "BinaryBuilder.jl — Using Julia's Pkg to deliver binary libraries",
+        "speakers": [
+            {
+                "code": "B98NWS",
+                "name": "Elliot Saba",
+                "biography": null,
+                "avatar": null
+            },
+            {
+                "code": "ST7KZT",
+                "name": "Mosè Giordano",
+                "biography": "Research Software Developer at UCL during the day, binary builder during the night.",
+                "avatar": null
+            }
+        ],
+        "abstract": "[`BinaryBuilder.jl`](https://binarybuilder.org/) is a framework that allows you to compile binaries for an ever-growing set of platforms (16 currently): Linux, FreeBSD, macOS and Windows on various architectures.  While `BinaryBuilder.jl` is mainly employed to build libraries and programs used in packages for the [Julia programming language](https://julialang.org/), it is completely general and anyone can install and use on their system the binaries it produces."
+    }
+]
