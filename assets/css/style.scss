@@ -33,6 +33,15 @@ header {
 	align-items: center;
 }
 
+.platinum {
+	margin: 50px 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 40px;
+	justify-items: center;
+	align-items: center;
+}
+
 .silver img {
 	max-width: 200px;
 	height: auto;
@@ -41,6 +50,12 @@ header {
 
 .gold img {
 	max-width: 400px;
+	height: auto;
+	object-fit: contain;
+}
+
+.platinum img {
+	transform: scale(3.5);
 	height: auto;
 	object-fit: contain;
 }
@@ -62,6 +77,10 @@ header {
 
 	.gold img {
 		max-width: 340px;
+	}
+
+	.platinum img {
+		transform: scale(3);
 	}
 }
 
