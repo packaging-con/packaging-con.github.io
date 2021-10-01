@@ -17,6 +17,16 @@ header {
 	}
 }
 
+ul.talks-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.anchor {
+	text-decoration: none;
+}
+
 .silver {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
