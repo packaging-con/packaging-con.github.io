@@ -42,6 +42,18 @@
         "abstract": "Both software and documents have dependencies. This talk focuses on managing document dependencies, to reduce both network and computation latency, and to ensure reproducible build (or typesetting) behaviour. Web development has a strong focus on reducing user experienced latency, as does serverless cloud computing.\r\n\r\nAt present human activity and large downloads are required to achieve these goals for TeX documents.  To improve matters the speaker has introduced the concept of Portable TeX Documents (PTD).  The PTD concept is intended to bring to source documents and the TeX community benefits similar to the benefits Portable Document Format (PDF) brought to Word users and Adobe.\r\n\r\nThe concepts and tools underlying PTD, particularly mounting git as a read-only file system, and the use of git backing stores (alternate object databases) are likely to be useful elsewhere. This is particularly true when most of the variability of a system lies in a small folder of text files (which is the case for TeX's typesetting inputs)."
     },
     {
+        "title": "Lxroot - Run, develop, and test packages and package managers in a lightweight virtual environment.",
+        "speakers": [
+            {
+                "code": "XTJYK8",
+                "name": "Parke Bostrom",
+                "biography": "Parke Bostrom started writing computer programs in the late 1980s.  He lives in California.  He believes a computer can only truly be \"personal\" if the user, and not the package manager, controls how software is installed, and how software runs.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Lxroot is a lightweight software virtualization tool (for Linux).  With Lxroot, a non-root user can safely and easily install, run, develop, and test both packages and package managers.  Compared with other virtualization tools, Lxroot is safer, smaller, conceptually simpler, and arguably more flexible (within the limits of what is possible as a non-root user).\r\n\r\nLxroot allows a non-root user to create chroot-style virtual environments via Linux namespaces.  Lxroot simply creates and configures these chroot-namespaces, and then runs programs inside them.  All the virtualization work is done directly by the Linux kernel itself, via its namespace capabilities.\r\n\r\nLxroot allows the simultaneous use of multiple package managers, both system package managers (such as pacman, apk, xbps, etc.), and non-system package managers (such as\r\npip, npm, Flatpak, conda, mamba, Spack, etc.).\r\n\r\nLxroot allows a non-root user, on a single host kernel, to easily mix-and-match packages, userlands, and package-managers from multiple sources, including from multiple different Linux distributions.\r\n\r\nDue to its simple and flexible nature, Lxroot has a variety of use cases related to the development, testing, and use of packages and package managers.\r\n\r\nMore information here:  \r\nhttps://github.com/parke/lxroot"
+    },
+    {
         "title": "Automated packaging for multiple platforms: Successes and lessons learned while packaging ROS",
         "speakers": [
             {
@@ -82,6 +94,18 @@
             }
         ],
         "abstract": "Defining dependency relationships is a fraught but integral part of the packaging process. Incorrect dependency definitions can have catastrophic consequences for users and the broader ecosystem. One of the reasons that specifying dependencies is so difficult is because version numbers are very loosely related to the actual property developers care about, the API and ABI. Software doesn\u2019t break if any API changed in a dependency, they only break if the API it relied on changed. Most version number do not capture this, providing a global view of a local problem. To address this, the symbol-management project has begun to catalog as many symbols as possible in the python ecosystem. While this was initially aimed at enhancing conda-forge\u2019s dependency metadata, the implications of the database are much greater. In addition to providing version constraint suggestions on dependencies, the project also enables the creation of version numbers based on changes in the project\u2019s symbols and determination of if a code-base is compatible with a given environment. In this talk I\u2019ll discuss the structure and motivations of the symbol-management project, some examples of how to use the project, and the future of the project."
+    },
+    {
+        "title": "The Packaging Grail",
+        "speakers": [
+            {
+                "code": "PVAZUZ",
+                "name": "Ludovic Court\u00e8s",
+                "biography": "Almost yen years ago, Ludovic started work on [GNU Guix](https://guix.gnu.org).  It has since become the home of a vibrant community encompassing free software enthusiasts, principled developers, and [scientists in search of reproducibility](https://hpc.guix.info).\r\n\r\nBefore that, Ludovic was already a co-maintainer of GNU Guile, an implementation of the Scheme functional programming language, and a contributor to Nix, Nixpkgs, and NixOS\u2014the beginning of a delightful journey at the crossroads of functional deployment and embedded domain-specific languages.",
+                "avatar": null
+            }
+        ],
+        "abstract": "Package managers are so old that one may wonder why we are here\r\ndiscussing recent tools in this area.  What are we trying to achieve\r\nthat existing tools failed to provide?  And why-oh-why does so much\r\nenergy go into sidestepping package managers through \u201capplication\r\nbundles\u201d \u00e0 la Docker?\r\n\r\nIn this talk, I\u2019ll present the grail that GNU\u00a0Guix is after, taking\r\nexamples from core features and key packaging practices.  You may\r\nrecognize bits from other projects: the rigor of Debian, the functional\r\nparadigm of Nix, the flexibility of Spack.  You\u2019ll also see salient\r\ndifferences: Guix tries to go as far as possible in each of these\r\ndirections while remaining pragmatic.\r\n\r\nThere\u2019s a fine line between pragmatism and deception that Guix tries not\r\nto cross.  I\u2019ll explain what the project\u2019s \u201cred lines\u201d are and why we\r\nthink users and implementors should care.  I\u2019ll reflect on how we can\r\ncollectively shape a brighter future for software deployment."
     },
     {
         "title": "Unraveling the magic behind Buildpacks",
@@ -126,6 +150,18 @@
         "abstract": "Since its first release, Swift Package Manager has downloaded dependencies using Git. Although a capable version-control system, Git isn't well-suited to this workflow for a variety of reasons. We're currently rolling out a brand new package registry that's designed from the ground up to meet the current and future needs of that Swift ecosystem. In this talk, we'll discuss some of the considerations we made and lessons we learned along the way."
     },
     {
+        "title": "Securing the Supply Chain with SLSA",
+        "speakers": [
+            {
+                "code": "QKZDVS",
+                "name": "Matthew Suozzo",
+                "biography": "Matthew works on Supply Chain Security at Google.",
+                "avatar": "https://pretalx.com/media/avatars/170920-509.01.MOMA_a1WcZvF.jpg"
+            }
+        ],
+        "abstract": "Package Managers are an increasingly popular target of attack.\r\nTheir near-ubiquity in many software ecosystems places developers and end-users at risk while their critical supply chain role makes code execution a frequent consequence of compromise.\r\n\r\nHowever with this centralized risk, there is centralized opportunity: Even modest process and policy changes stand to markedly improve each package manager's respective ecosystem.\r\nThe limited resources available to maintainers should be spent where they can deliver the greatest security benefit.\r\nTo this end, we present high-value interventions that apply standardized tools and frameworks like Supply-chain Levels for Software Artifacts (SLSA) to the generalized package management domain."
+    },
+    {
         "title": "Combining CVMFS, Nix or Gentoo Prefix, Lmod, and EasyBuild at Compute Canada",
         "speakers": [
             {
@@ -136,6 +172,18 @@
             }
         ],
         "abstract": "One of the challenges in HPC is to deliver a consistent software stack that balances the needs of the system administrators with the needs of the users. This means running recent software on enterprise Linux distributions that ship older software. Traditionally this is accomplished using environment modules, that change environment variables such as $PATH to point to the software that is needed. At Compute Canada we have taken this further by distributing a complete user-level software stack, including all needed libraries including the GNU C library (Glibc), but excluding any privileged components. Our setup combined Nix, and now combines Gentoo Prefix for the bottom layer of base components, EasyBuild for the top layer of more scientifically inclined components, Lmod to implement environment modules, and the CernVM File System (CVMFS) to distribute it to Canadian supercomputers and anyone else who is interested. This approach has gained interest in other places, most notably with the EESSI project that originated in Europe.\r\n\r\nI will describe our setup and discuss the pros and cons of Nix versus Gentoo Prefix, and the challenges that come with using glibc in a non-standard location."
+    },
+    {
+        "title": "MinNPM: Customizable Optimizing Dependency Resolution",
+        "speakers": [
+            {
+                "code": "BU7PPZ",
+                "name": "Donald Pinckney",
+                "biography": "I enjoy working on formalizing semantics of systems so as to uncover surprising behavior, and fix related bugs. Recently I'm working on understanding the semantics of package managers.",
+                "avatar": "https://pretalx.com/media/avatars/donald_pinckney_RwPlCu5.jpg"
+            }
+        ],
+        "abstract": "When performing dependency resolution, \r\na package manager makes choices about which versions\r\nof packages to install. These choices impact the final bundled application\r\nin a variety of ways, such as: \r\ncorrectness, code size, performance and security vulnerabilities.\r\nDifferent production package managers (such NPM, Pip and Cargo)\r\ncan produce very different results when resolving identical lists of dependencies,\r\nwhich can lead to users being confounded and having little choice over\r\ndependency resolution behavior. \r\nWe address this by developing a unifying formal model of the semantics\r\nof dependency resolution, and show that this model can encompass and highlight\r\nthe key differences between NPM, Pip and Cargo.\r\nFurther, our formal model delineates a design space of hypothetical package\r\nmanagers, which popular package managers only inhabit a part of.\r\nWe enable empirical exploration of this design space by implementing MinNPM,\r\na drop-in replacement for NPM which allows for user-specified\r\ncustomization of the dependency resolution semantics.\r\nUsing MinNPM we explore the empirical differences within the design space,\r\nboth among existing package managers' semantics, and with novel semantics\r\nwhich allow us to directly minimize arbitrary optimization objectives."
     },
     {
         "title": "Mitigating Open-source Software Supply Chain Attacks With OSSIBOT",
@@ -184,8 +232,14 @@
         "speakers": [
             {
                 "code": "KCKTX3",
-                "name": "Martin Perez",
-                "biography": "Senior Staff Engineer at VMware with more than 20 years of experience working in high performance distributed systems.",
+                "name": "Martin Perez, Beltr\u00e1n Rueda",
+                "biography": "Martin is a Senior Staff Engineer and Beltr\u00e1n is a Senior Engineering Manager at VMware both with more than 20 years of experience in complex and large distributed software systems.",
+                "avatar": null
+            },
+            {
+                "code": "CPKKAV",
+                "name": "Beltr\u00e1n Rueda",
+                "biography": null,
                 "avatar": null
             }
         ],
@@ -468,16 +522,16 @@
         "abstract": "Golangs module and dependency system addresses more than version management. This talk will explore the lesser known features which support security in the software supply chain."
     },
     {
-        "title": "Lxroot - Run, develop, and test packages and package managers in a lightweight virtual environment.",
+        "title": "What is Chocolatey, The Package Manager for Windows?",
         "speakers": [
             {
-                "code": "XTJYK8",
-                "name": "Parke Bostrom",
-                "biography": "Parke Bostrom started writing computer programs in the late 1980s.  He lives in California.  He believes a computer can only truly be \"personal\" if the user, and not the package manager, controls how software is installed, and how software runs.",
+                "code": "DFPH3V",
+                "name": "Paul Broadwith",
+                "biography": "Paul is a Engineer at heart with a love of PowerShell, Automation, Chocolatey, Scottish single malt whisky and wireless earphones. He has given workshops and spoken at different events across the UK, Europe and the US. He has a real passion for passing on knowledge and loves to talk with aspiring techies.\r\n\r\nHe is a Microsoft MVP and MCT, is Lead Engineer on the Boxstarter and DSC cChoco Chocolatey projects and is an organiser of the DATA:Scotland event. His career has seen him work in many sectors for over 25 years. As somebody kindly put it, he's been about a bit.\r\n\r\nIn his spare time, he usually continues to stare at computer screens and works on his own or Chocolatey projects. But on those rare occasions, when he is not staring at computer screens and listening to a strange mix of music on his wireless earphones, you can find him relaxing with a nice single malt whisky and reading ... usually technical books.",
                 "avatar": null
             }
         ],
-        "abstract": "Lxroot is a lightweight software virtualization tool (for Linux).  With Lxroot, a non-root user can safely and easily install, run, develop, and test both packages and package managers.  Compared with other virtualization tools, Lxroot is safer, smaller, conceptually simpler, and arguably more flexible (within the limits of what is possible as a non-root user).\r\n\r\nLxroot allows a non-root user to create chroot-style virtual environments via Linux namespaces.  Lxroot simply creates and configures these chroot-namespaces, and then runs programs inside them.  All the virtualization work is done directly by the Linux kernel itself, via its namespace capabilities.\r\n\r\nLxroot allows the simultaneous use of multiple package managers, both system package managers (such as pacman, apk, xbps, etc.), and non-system package managers (such as\r\npip, npm, Flatpak, conda, mamba, Spack, etc.).\r\n\r\nLxroot allows a non-root user, on a single host kernel, to easily mix-and-match packages, userlands, and package-managers from multiple sources, including from multiple different Linux distributions.\r\n\r\nDue to its simple and flexible nature, Lxroot has a variety of use cases related to the development, testing, and use of packages and package managers.\r\n\r\nMore information here:  https://github.com/parke/lxroot"
+        "abstract": "Nix has awesome packing tools. Many of them. Windows was always the landscape of Next -> Next -> Next.\r\n\r\nEver wished you could take all of those Windows applications you run, install them, and not have to click anything? Easily keep them up to date and not click anything? And in WINDOWS?\r\n\r\nCome with me on this journey, and you\u2019ll see a world of Windows Automation, Package Management and a thriving Community."
     },
     {
         "title": "Python Packaging: Why Don\u2019t You Just\u2026?",
@@ -723,6 +777,12 @@
         "title": "SBOM, Packaging, and Vulnerabilities",
         "speakers": [
             {
+                "code": "RNFW3S",
+                "name": "Kate Stewart",
+                "biography": null,
+                "avatar": null
+            },
+            {
                 "code": "EV3Z8M",
                 "name": "Art Manion",
                 "biography": "Art Manion is the Vulnerability Analysis Technical Manager at the CERT Coordination Center (CERT/CC), part of the Software Engineering Institute at Carnegie Mellon University. He and his team coordinate complex vulnerability disclosures, perform in-depth technical analysis, and influence practice, standards, and policy.",
@@ -760,5 +820,29 @@
             }
         ],
         "abstract": "[`BinaryBuilder.jl`](https://binarybuilder.org/) is a framework that allows you to compile binaries for an ever-growing set of platforms (16 currently): Linux, FreeBSD, macOS and Windows on various architectures.  While `BinaryBuilder.jl` is mainly employed to build libraries and programs used in packages for the [Julia programming language](https://julialang.org/), it is completely general and anyone can install and use on their system the binaries it produces."
+    },
+    {
+        "title": "PyPI & Supply Chain Security",
+        "speakers": [
+            {
+                "code": "YRRKXN",
+                "name": "Dustin Ingram",
+                "biography": "Dustin Ingram is a director at the Python Software Foundation, a maintainer of the Python Package Index, and a Developer Advocate at Google.",
+                "avatar": "https://pretalx.com/media/avatars/GooglePortraits_dustin-56-crop_TzIAeKn.jpg"
+            }
+        ],
+        "abstract": "The Python Package Index (PyPI) is one of the oldest software repositories for a language ecosystem and the canonical place to publish Python code. It serves more than 2 billion requests a day, and is almost entirely supported by volunteers and the non-profit Python Software Foundation. \r\n \r\nIn this talk, we'll review some recent supply-chain attacks and how they relate to PyPI specifically. In addition, we'll take a look at some in-progress projects to make PyPI more resilient, secure and sustainable."
+    },
+    {
+        "title": "The Riddle of Package Managers\u2026 Solved by Conan",
+        "speakers": [
+            {
+                "code": "CNNR83",
+                "name": "Batel Zohar",
+                "biography": "Batel Zohar is a Developer Advocate for JFrog and has a background in DevOps support engineering, web development, and embedded software engineering. Prior to this, Batel served as an Enterprise Solutions Lead on a dedicated team that accompanies and assists large customers through the architectural implementation of the JFrog platform. She loves her dogs, plays guitar, and is a fan of Marvel\u2019s movies",
+                "avatar": "https://pretalx.com/media/avatars/batel_gep1iYF.png"
+            }
+        ],
+        "abstract": "As a C and C++ developer how do you choose the right package management system for your code? There are a ton of questions that you should be asking yourself: does it have integrations, do we need end-to-end binary management, can it work with different software systems, will it provide consistency to my CI/CD workflow? Fortunately we have an open source solution that solves the riddle of package managers\u2026 Conan! \r\n\r\nConan the Barbarian is forced to solve \u201cThe riddle\u2026 of steel,\u201d so that he can reach his end goal of resting in eternity in Valhalla. To a somewhat lesser degree we want to make our users happy and solve the riddle of package managers and for us that is Conan with Artifactory. In this session we will talk about how C and C++ developers that are having issues when trying to create a repository system for their packages can solve this complex problem with Conan. Conan abstracts away build systems, defines a \u201cProject API\u201d for C++ project, provides a repository system for multi-binary packages, and serves as a building block for Continuous Integration workflows."
     }
 ]
