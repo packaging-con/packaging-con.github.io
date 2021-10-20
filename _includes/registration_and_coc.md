@@ -1,3 +1,15 @@
+### Conference Schedule
+
+We are excited to announce the conference schedule for the talks accepted at PackagingCon 2021!
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col text-center">
+        <a href="https://pretalx.com/packagingcon-2021/schedule/#" class="text-center btn btn-primary">View Schedule</a>
+    </div>
+  </div>
+</div>
+
 ### Accepted Talks
 
 We are excited about the accepted talks at PackagingCon 2021! You can find the full list of talks that will be held under:
