@@ -26,3 +26,13 @@ At 21:15 UTC we will reconvene on gather.town for lightning talks and networking
 We will start on Wednesday at **16:00 UTC** with a panel discussion. The panel session uses the same YouTube stream as Room 1 (please check your emails, the links will be _different_ from day 1).
 
 Then same program as on day 1: 4 hours of talks, and lightning talks afterwards.
+
+## Reporting CoC Violations
+
+If you believe someone is violating the code of conduct, please report this in a timely manner. Code of conduct violations reduce the value of the community for everyone and we take them seriously.
+
+You can make a personal report by:
+
+- By Email: Send a message to <a href="mailto:conduct@numfocus.org">conduct@numfocus.org</a>.
+
+- <a href="https://numfocus.typeform.com/to/ynjGdT">Online Form</a>: NumFOCUS Code of Conduct Report (your name and contact information are not required).
