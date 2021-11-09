@@ -1,11 +1,14 @@
-### Conference Schedule and Job Board
+### Conference Schedule, Attendee Information & Job Board
 
-We are excited to announce the conference schedule for the talks accepted at PackagingCon 2021! Please also see job listings by our Sponsors.
+We are excited to announce the conference schedule for the talks accepted at PackagingCon 2021! Below, you will also find information for attendees. Please also take a moment to see job listings by our Sponsors.
 
 <div class="container">
   <div class="row my-5">
     <div class="col text-center">
         <a href="https://pretalx.com/packagingcon-2021/schedule/#" class="text-center btn btn-primary">View Schedule</a>
+    </div>
+    <div class="col text-center">
+      <a href="/info.html" class="text-center btn btn-primary">Attendee Information</a>
     </div>
     <div class="col text-center">
       <a href="/jobs.html" class="text-center btn btn-primary">Job Board</a>
