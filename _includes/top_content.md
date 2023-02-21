@@ -1,4 +1,4 @@
-PackagingCon will return in Spring-Summer 2023!
+PackagingCon will return from the 26th to 28th of October, 2023 in Berlin, Germany!
 
 We are currently in the planning stages for PackagingCon 2023.
 PackagingCon is a conference for developers of software package management software, as well as software packagers and communities.
