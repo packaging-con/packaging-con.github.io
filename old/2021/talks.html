@@ -1,0 +1,1440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>PackagingCon 2021 - a conference for package manager developers and packagers</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="assets/images/logo_new.svg"/>
+      </div>
+    </header>
+
+   <div class="container py-5">
+<h1>Talks</h1>
+
+<p>
+	This is a unsorted list of all accepted & confirmed talks. Note that not all accepted talks have been confirmed by the speakers yet!<br/>
+	We will publish a schedule shortly!<br/>
+</p>
+<p>
+<b>PackagingCon 2021 will happen on the 9th and 10th of November 2021.
+Please register on Eventbrite to get your Ticket:</b>
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col text-center">
+        <a href="https://www.eventbrite.com/e/packagingcon-2021-tickets-164662898161" class="text-center btn btn-primary">Register for PackagingCon</a>
+    </div>
+  </div>
+</div>
+
+</p>
+
+<hr/>
+<ul class="talks-list">
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Julia's Pkg – Design & Rationale" class="anchor" aria-hidden="true" href="#Julia's Pkg – Design & Rationale">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Julia's Pkg – Design & Rationale
+		</h3>
+		<b>Stefan Karpinski</b>
+		<p><p>The Julia programming language features a built-in package manager commonly referred to as “Pkg”.  It’s actually the third iteration of package manager for the language, code-named Pkg3 while in development. The previous iterations were quite traditional, inspired by Perl’s CPAN and RubyGems. Pkg3 is <em>different</em>. This talk explores how it differs from its predecessors and other package managers and what lessons we’ve learned while developing it and scaling up its usage.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Building a flexible dependency solver in Rust" class="anchor" aria-hidden="true" href="#Building a flexible dependency solver in Rust">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Building a flexible dependency solver in Rust
+		</h3>
+		<b>Matthieu Pizenberg, Jacob Finkelman</b>
+		<p><p>Dependency solving is a hard problem, especially when mixed with additional features such as optional dependencies, multiple versions or availability of pre-releases. We present a rewrite from scratch of a recent algorithm called PubGrub, as a Rust library aiming at great performance and flexibility for reuse. We will dive into its core mechanisms, its high-level usage, as well as our new ideas enabling behavioral extensions such as optional dependencies, entirely in user space without changing the library API.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Tools for packaging and using Portable TeX Documents" class="anchor" aria-hidden="true" href="#Tools for packaging and using Portable TeX Documents">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Tools for packaging and using Portable TeX Documents
+		</h3>
+		<b>Jonathan Fine</b>
+		<p><p>Both software and documents have dependencies. This talk focuses on managing document dependencies, to reduce both network and computation latency, and to ensure reproducible build (or typesetting) behaviour. Web development has a strong focus on reducing user experienced latency, as does serverless cloud computing.</p>
+
+<p>At present human activity and large downloads are required to achieve these goals for TeX documents.  To improve matters the speaker has introduced the concept of Portable TeX Documents (PTD).  The PTD concept is intended to bring to source documents and the TeX community benefits similar to the benefits Portable Document Format (PDF) brought to Word users and Adobe.</p>
+
+<p>The concepts and tools underlying PTD, particularly mounting git as a read-only file system, and the use of git backing stores (alternate object databases) are likely to be useful elsewhere. This is particularly true when most of the variability of a system lies in a small folder of text files (which is the case for TeX’s typesetting inputs).</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Lxroot - Run, develop, and test packages and package managers in a lightweight virtual environment." class="anchor" aria-hidden="true" href="#Lxroot - Run, develop, and test packages and package managers in a lightweight virtual environment.">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Lxroot - Run, develop, and test packages and package managers in a lightweight virtual environment.
+		</h3>
+		<b>Parke Bostrom</b>
+		<p><p>Lxroot is a lightweight software virtualization tool (for Linux).  With Lxroot, a non-root user can safely and easily install, run, develop, and test both packages and package managers.  Compared with other virtualization tools, Lxroot is safer, smaller, conceptually simpler, and arguably more flexible (within the limits of what is possible as a non-root user).</p>
+
+<p>Lxroot allows a non-root user to create chroot-style virtual environments via Linux namespaces.  Lxroot simply creates and configures these chroot-namespaces, and then runs programs inside them.  All the virtualization work is done directly by the Linux kernel itself, via its namespace capabilities.</p>
+
+<p>Lxroot allows the simultaneous use of multiple package managers, both system package managers (such as pacman, apk, xbps, etc.), and non-system package managers (such as
+pip, npm, Flatpak, conda, mamba, Spack, etc.).</p>
+
+<p>Lxroot allows a non-root user, on a single host kernel, to easily mix-and-match packages, userlands, and package-managers from multiple sources, including from multiple different Linux distributions.</p>
+
+<p>Due to its simple and flexible nature, Lxroot has a variety of use cases related to the development, testing, and use of packages and package managers.</p>
+
+<p>More information here:<br />
+https://github.com/parke/lxroot</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Automated packaging for multiple platforms: Successes and lessons learned while packaging ROS" class="anchor" aria-hidden="true" href="#Automated packaging for multiple platforms: Successes and lessons learned while packaging ROS">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Automated packaging for multiple platforms: Successes and lessons learned while packaging ROS
+		</h3>
+		<b>Steven! Ragnarök, Tully Foote</b>
+		<p><p>We have developed a system which will automatically generate packages for deb based packaging systems such as Debian and Ubuntu, RPM based packaging systems such as Fedora and RHEL, as well as source based packaging/distribution systems such as Gentoo or OpenEmbedded. This talk will delve into how and why we’ve done it. We will cover lessons learned over the course of more than ten years of experience and then discuss where we’re going next and what tools and approaches we’ve developed that others may find useful.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="The Haiku Package manager" class="anchor" aria-hidden="true" href="#The Haiku Package manager">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    The Haiku Package manager
+		</h3>
+		<b>Richard Zak</b>
+		<p><p>The Haiku operating system, which is a modern, open source re-implementation of BeOS from the 1990’s, has an interesting software packaging system. Much like Debian’s .deb or RedHat’s .rpm files, Haiku’s .hpkg files include the files, description of the software, and dependencies. Like it’s Linux cousins, it also ensures that the dependencies are met, installing the dependencies if not already installed and available in the repository.</p>
+
+<p>What sets Haiku’s package manager apart is two things: Each file in the package is mounted as a read-only file into the file system, which ensures security; and the boot manager is aware of the state of the packing system, allowing the user to reboot and start the operating system as it was in a prior state.</p>
+
+<p>Since each file is mounted from the package into the file system, it cannot be changed, either by the user (intentionally, or accidentally), or by a mis-behaving application. The only way to change the file is to install a different version, or to uninstall it completely. There is a downside to this though, it does make porting some applications tricky.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Will the Real Slugify Please Stand Up: Adventures in API Mapping and Dependency Discovery" class="anchor" aria-hidden="true" href="#Will the Real Slugify Please Stand Up: Adventures in API Mapping and Dependency Discovery">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Will the Real Slugify Please Stand Up: Adventures in API Mapping and Dependency Discovery
+		</h3>
+		<b>CJ Wright</b>
+		<p><p>Defining dependency relationships is a fraught but integral part of the packaging process. Incorrect dependency definitions can have catastrophic consequences for users and the broader ecosystem. One of the reasons that specifying dependencies is so difficult is because version numbers are very loosely related to the actual property developers care about, the API and ABI. Software doesn’t break if any API changed in a dependency, they only break if the API it relied on changed. Most version number do not capture this, providing a global view of a local problem. To address this, the symbol-management project has begun to catalog as many symbols as possible in the python ecosystem. While this was initially aimed at enhancing conda-forge’s dependency metadata, the implications of the database are much greater. In addition to providing version constraint suggestions on dependencies, the project also enables the creation of version numbers based on changes in the project’s symbols and determination of if a code-base is compatible with a given environment. In this talk I’ll discuss the structure and motivations of the symbol-management project, some examples of how to use the project, and the future of the project.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="The Packaging Grail" class="anchor" aria-hidden="true" href="#The Packaging Grail">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    The Packaging Grail
+		</h3>
+		<b>Ludovic Courtès</b>
+		<p><p>Package managers are so old that one may wonder why we are here
+discussing recent tools in this area.  What are we trying to achieve
+that existing tools failed to provide?  And why-oh-why does so much
+energy go into sidestepping package managers through “application
+bundles” à la Docker?</p>
+
+<p>In this talk, I’ll present the grail that GNU Guix is after, taking
+examples from core features and key packaging practices.  You may
+recognize bits from other projects: the rigor of Debian, the functional
+paradigm of Nix, the flexibility of Spack.  You’ll also see salient
+differences: Guix tries to go as far as possible in each of these
+directions while remaining pragmatic.</p>
+
+<p>There’s a fine line between pragmatism and deception that Guix tries not
+to cross.  I’ll explain what the project’s “red lines” are and why we
+think users and implementors should care.  I’ll reflect on how we can
+collectively shape a brighter future for software deployment.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Unraveling the magic behind Buildpacks" class="anchor" aria-hidden="true" href="#Unraveling the magic behind Buildpacks">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Unraveling the magic behind Buildpacks
+		</h3>
+		<b>Sambhav Kothari, Natalie Arellano</b>
+		<p><p>Cloud Native Buildpacks makes building container images a breeze. It comes with out-of-the-box support for rebasing, reproducibility, multiple entrypoints and more! In this talk we’ll uncover the magic that the lifecycle - the binary at the heart of CNB - uses to convert source code into OCI images.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Force Multipliers in Package Management: How Homebrew Maintainers Keep Up With 10,000+ Packages" class="anchor" aria-hidden="true" href="#Force Multipliers in Package Management: How Homebrew Maintainers Keep Up With 10,000+ Packages">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Force Multipliers in Package Management: How Homebrew Maintainers Keep Up With 10,000+ Packages
+		</h3>
+		<b>Caleb Xu</b>
+		<p><p>An overview of the policies, design choices, and tooling that allow a team to maintain the Homebrew ecosystem, enabling timely delivery of updates while minimizing regressions in packages and dependency trees.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="$ swift package-registry init" class="anchor" aria-hidden="true" href="#$ swift package-registry init">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    $ swift package-registry init
+		</h3>
+		<b>Mattt</b>
+		<p><p>Since its first release, Swift Package Manager has downloaded dependencies using Git. Although a capable version-control system, Git isn’t well-suited to this workflow for a variety of reasons. We’re currently rolling out a brand new package registry that’s designed from the ground up to meet the current and future needs of that Swift ecosystem. In this talk, we’ll discuss some of the considerations we made and lessons we learned along the way.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Securing the Supply Chain with SLSA" class="anchor" aria-hidden="true" href="#Securing the Supply Chain with SLSA">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Securing the Supply Chain with SLSA
+		</h3>
+		<b>Matthew Suozzo</b>
+		<p><p>Package Managers are an increasingly popular target of attack.
+Their near-ubiquity in many software ecosystems places developers and end-users at risk while their critical supply chain role makes code execution a frequent consequence of compromise.</p>
+
+<p>However with this centralized risk, there is centralized opportunity: Even modest process and policy changes stand to markedly improve each package manager’s respective ecosystem.
+The limited resources available to maintainers should be spent where they can deliver the greatest security benefit.
+To this end, we present high-value interventions that apply standardized tools and frameworks like Supply-chain Levels for Software Artifacts (SLSA) to the generalized package management domain.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Combining CVMFS, Nix or Gentoo Prefix, Lmod, and EasyBuild at Compute Canada" class="anchor" aria-hidden="true" href="#Combining CVMFS, Nix or Gentoo Prefix, Lmod, and EasyBuild at Compute Canada">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Combining CVMFS, Nix or Gentoo Prefix, Lmod, and EasyBuild at Compute Canada
+		</h3>
+		<b>Bart Oldeman</b>
+		<p><p>One of the challenges in HPC is to deliver a consistent software stack that balances the needs of the system administrators with the needs of the users. This means running recent software on enterprise Linux distributions that ship older software. Traditionally this is accomplished using environment modules, that change environment variables such as $PATH to point to the software that is needed. At Compute Canada we have taken this further by distributing a complete user-level software stack, including all needed libraries including the GNU C library (Glibc), but excluding any privileged components. Our setup combined Nix, and now combines Gentoo Prefix for the bottom layer of base components, EasyBuild for the top layer of more scientifically inclined components, Lmod to implement environment modules, and the CernVM File System (CVMFS) to distribute it to Canadian supercomputers and anyone else who is interested. This approach has gained interest in other places, most notably with the EESSI project that originated in Europe.</p>
+
+<p>I will describe our setup and discuss the pros and cons of Nix versus Gentoo Prefix, and the challenges that come with using glibc in a non-standard location.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="MinNPM: Customizable Optimizing Dependency Resolution" class="anchor" aria-hidden="true" href="#MinNPM: Customizable Optimizing Dependency Resolution">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    MinNPM: Customizable Optimizing Dependency Resolution
+		</h3>
+		<b>Donald Pinckney</b>
+		<p><p>When performing dependency resolution, 
+a package manager makes choices about which versions
+of packages to install. These choices impact the final bundled application
+in a variety of ways, such as: 
+correctness, code size, performance and security vulnerabilities.
+Different production package managers (such NPM, Pip and Cargo)
+can produce very different results when resolving identical lists of dependencies,
+which can lead to users being confounded and having little choice over
+dependency resolution behavior. 
+We address this by developing a unifying formal model of the semantics
+of dependency resolution, and show that this model can encompass and highlight
+the key differences between NPM, Pip and Cargo.
+Further, our formal model delineates a design space of hypothetical package
+managers, which popular package managers only inhabit a part of.
+We enable empirical exploration of this design space by implementing MinNPM,
+a drop-in replacement for NPM which allows for user-specified
+customization of the dependency resolution semantics.
+Using MinNPM we explore the empirical differences within the design space,
+both among existing package managers’ semantics, and with novel semantics
+which allow us to directly minimize arbitrary optimization objectives.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Mitigating Open-source Software Supply Chain Attacks With OSSIBOT" class="anchor" aria-hidden="true" href="#Mitigating Open-source Software Supply Chain Attacks With OSSIBOT">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Mitigating Open-source Software Supply Chain Attacks With OSSIBOT
+		</h3>
+		<b>Ashish Bijlani, Ajinkya Rajput</b>
+		<p><p>Software package managers have become a vital part of the modern software development process. They allow developers to easily adopt third-party software and streamline the development process. However, bad actors today reportedly leverage highly sophisticated techniques such as typo-squattng and social engineering to “supply” purposefully harmful code (malware) and carry out software supply chain attacks. For example, eslint-scope, a NPM package with millions of weekly downloads, was compromised to steal credentials from developers.</p>
+
+<p>We are building a large-scale automated vetting infrastructure to analyze millions of published software packages and provide actionable insights into their composition and security posture. In this presentation, we will cover the technical details of our system and introduce a free tool for developers to detect accidental installation of “risky” packages and mitigate software supply chain attacks. We have already detected a number of abandoned, typo-squatting, and malicious packages. We will present our findings, highlight different types of attacks and measures that developers  can take to thwart such attacks. With our work, we hope to enhance productivity of the developer community by exposing undesired behavior in untrusted third-party code, maintaining developer trust and reputation, and enforcing security of package managers.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Creating Open Source Unikernel Packages" class="anchor" aria-hidden="true" href="#Creating Open Source Unikernel Packages">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Creating Open Source Unikernel Packages
+		</h3>
+		<b>Ian Eyberg</b>
+		<p><p>Unikernels are a new way of deploying individual applications as virtual machines in the cloud that can run linux applications faster and safer than linux. Since unikernels are deployed as virtual machines, packaging allows end-users to run common software without compiling it themselves in a cross-platform and cross-architecture way.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Homebrew: improved Linux support (and a historical review of our Linux CI)" class="anchor" aria-hidden="true" href="#Homebrew: improved Linux support (and a historical review of our Linux CI)">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Homebrew: improved Linux support (and a historical review of our Linux CI)
+		</h3>
+		<b>Michka Popoff</b>
+		<p><p>Homebrew is a free and open-source package manager, initially written for macOS. Linuxbrew, a fork of Homebrew for Linux, was created in 2012. In 2019, we announced the official support for Linux and Windows 10 (with Windows Subsystem for Linux). The Linux-specific code of the package manager was back-ported from Linuxbrew to the main Brew repository in 2018/2019.</p>
+
+<p>But the story did not end there. The Linux packages were still living in a separate repository: linuxbrew-core. We had to migrate all the changes from the Linux repository to the main repository (homebrew-core). There were more than 5000 lines of code to be back-ported. We also started building Linux packages in homebrew-core, so we had to set up Linux CI along the existing macOS one. As this task is now almost completed and we will soon decommission linuxbrew-core, I would like to come back on the details of this epic migration. This talk will make a small retrospective on why it took us almost 2 years to finish the migration. I will also take the opportunity to discuss the setup of our Linux CI, and the issues we faced while doing so.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Bitnami: 15 years bringing open source to the masses" class="anchor" aria-hidden="true" href="#Bitnami: 15 years bringing open source to the masses">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Bitnami: 15 years bringing open source to the masses
+		</h3>
+		<b>Martin Perez, Beltrán Rueda, Beltrán Rueda</b>
+		<p><p>Bitnami is an application packaging and publishing startup that was acquired by VMware in 2019. It is a leading provider of prepackaged open source software that runs natively in environments where a large portion of developers and other users want to build or deploy applications in the major public clouds, on laptops, and on Kubernetes. Over the last few years with the increased popularity of containers and platforms like Kubernetes, Bitnami’s growth has raised exponentially and several of its containerised applications are now well over +1B downloads each.</p>
+
+<p>The secret sauce for Bitnami success has always been trying to make Open Source safe and easy to use. Sounds simple, but it is actually very challenging. A robust pipeline must be able to build many different flavours of open source software targeting many different operating systems and clouds, and it has to be simple. Abstracting users from complexity. Additionally, Bitnami focuses on making Open Source safer by having those application packages running within a continuous update loop taking care of releasing updates when new vulnerabilities or attacks are found.</p>
+
+<p>In this talk we would like to go over how we have made this possible over the last 15 years.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="HELLO WORLD: A Survey of Trust-Based Code Reuse" class="anchor" aria-hidden="true" href="#HELLO WORLD: A Survey of Trust-Based Code Reuse">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    HELLO WORLD: A Survey of Trust-Based Code Reuse
+		</h3>
+		<b>George P. Sieniawski, John Speed Meyers</b>
+		<p><p>Open source software communities rely heavily on user trust. However, typosquatting, watering hole attacks, and developer infrastructure exploits can easily undermine the same honor system that enables easy software package reuse. To better understand trust-based code reuse within language-based ecosystems like npm and Python Package Index (PyPI), IQT Labs recently surveyed 150 software engineers, data scientists, and web developers. Despite high levels of educational attainment, the majority of survey takers agreed with the statement “I wish I knew more about security vulnerabilities associated with code reuse.” When asked who is responsible for keeping code safe, more than half of respondents indicated security is a responsibility individual developers share with package registries. However, this diffusion of responsibility and assumption that package registries have adequate resources to address today’s shared code vulnerabilities can lead to developer complacency, particularly since many participants admitted they “do not engage in pre-install code vetting.” In addition to discussing the value of more training, clearer policies, and more robust organizational support, this talk explores the importance of package manager usability.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Package registries for the Julia package manager" class="anchor" aria-hidden="true" href="#Package registries for the Julia package manager">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Package registries for the Julia package manager
+		</h3>
+		<b>Kristoffer Carlsson</b>
+		<p><p>This talk discusses the current implementation of package registries for the Julia package manager and some of the lessons learned along the way.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Python in Fedora: Integrating a language ecosystem in a distro" class="anchor" aria-hidden="true" href="#Python in Fedora: Integrating a language ecosystem in a distro">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Python in Fedora: Integrating a language ecosystem in a distro
+		</h3>
+		<b>Petr Viktorin, Miro Hrončok</b>
+		<p><p>The Fedora Python SIG and the Python maintenance team at Red Hat
+are systems integrators who work at the intersection of two worlds:
+a cross-platform ecosystem and a platform open to all kinds of software.</p>
+
+<p>This talk introduces both Python packaging and RPM,
+explains why we go through the trouble to repackage Python projects in RPM,
+and covers some of the issues we’re solving.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Package Management for DevOps" class="anchor" aria-hidden="true" href="#Package Management for DevOps">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Package Management for DevOps
+		</h3>
+		<b>Jasmine Dahilig</b>
+		<p><p>Multi-cloud and microservices are making us redefine the meaning of a “package.” Modern applications span languages, operating systems, networks, and machines. To deploy a whole service, you need binaries, configuration files, environment variables, host metadata, and services must be connected and secured at runtime. For a developer, it becomes a best practice to save the entire runtime of a service as deployment configuration in version control. Deployment configurations, combined with powerful workload orchestrators, make it easy to guarantee reproducible runtime, but managing these configurations with version control and open-source dependencies starts to resemble package management. For system operators, ensuring that the computing clusters have relevant software packages installed for successful deployments can also be a challenge, as the application package landscape changes rapidly and manual provisioning slows development.</p>
+
+<p>To make it easier for developers and operators to embrace DevOps, we built a package manager for deployments running on Nomad, a distributed workload orchestrator. This talk will cover a range of topics related to package management and DevOps workflows, including the best practices we learned while building a package manager to guide users on their journey to multi-cloud.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Versioning for User-Facing Changes vs API Breakages" class="anchor" aria-hidden="true" href="#Versioning for User-Facing Changes vs API Breakages">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Versioning for User-Facing Changes vs API Breakages
+		</h3>
+		<b>Blake Anderson</b>
+		<p><p>Semantic Versioning (<code class="language-plaintext highlighter-rouge">MAJOR.MINOR.PATCH</code>) is a common approach to versioning
+libraries that separates changes into fixes (<code class="language-plaintext highlighter-rouge">PATCH</code>), additions (<code class="language-plaintext highlighter-rouge">MINOR</code>), and
+breakages (<code class="language-plaintext highlighter-rouge">MAJOR</code>). Though simple, SemVer has two primary limitations that can
+make it difficult for developers to work with:</p>
+
+<ol>
+  <li>
+    <p>User-facing changes, such as new features or redesigns, are not separated
+from API breakages. Therefore, the compatibility between versions is harder
+for maintainers to understand as the impact of MAJOR updates can vary
+significantly (ex. Python <code class="language-plaintext highlighter-rouge">1-&gt;2</code> vs <code class="language-plaintext highlighter-rouge">2-&gt;3</code>). In consequence, some projects
+now use year-based versioning or ‘ZeroVer’ (where <code class="language-plaintext highlighter-rouge">MAJOR</code> is always <code class="language-plaintext highlighter-rouge">0</code>),
+thus avoiding  the question of API compatibility entirely.</p>
+  </li>
+  <li>
+    <p>API breakages are always represented by the <code class="language-plaintext highlighter-rouge">MAJOR</code> version and do not take
+into account different types of breakages, such as source vs binary
+compatibility. Additionally, tooling can be used to repair many common types
+of breakages (such as renaming) which do not have significant impact on how
+the library is used.</p>
+  </li>
+</ol>
+
+<p>The purpose of this talk is to raise awareness of these limitations, demonstrate
+the use cases for having multiple levels of API versioning, and propose
+alternative versioning methods that can incorporate different types of API
+breakages.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Running a Python Package Index for Raspberry Pi" class="anchor" aria-hidden="true" href="#Running a Python Package Index for Raspberry Pi">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Running a Python Package Index for Raspberry Pi
+		</h3>
+		<b>Ben Nuttall</b>
+		<p><p>piwheels is a mirror of the Python Package Index, providing binary distributions compiled for the Raspberry Pi’s Arm architecture.</p>
+
+<p>Package maintainers usually provide wheels compiled for PC/Mac but not for the Arm architecture, so piwheels natively compiles all packages and makes them available to Raspberry Pi users, the regular way, using pip, without any change in behaviour required.</p>
+
+<p>Providing pre-compiled binary wheels saves users time and effort, reducing friction to getting started with Python projects on Raspberry Pi.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Micro-packaging reusable data science pipelines in Python" class="anchor" aria-hidden="true" href="#Micro-packaging reusable data science pipelines in Python">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Micro-packaging reusable data science pipelines in Python
+		</h3>
+		<b>Lorena Balan</b>
+		<p><p>We believe that sharing and reusing data science code is the future for scaling machine learning across the world because it allows us to work more efficiently. To achieve this grand vision, we had to look at how micro-packaging could be done in Python, the language of choice for most data scientists. Micro-packaging is a widely debated topic in the npm world, and it hasn’t taken off in the Python packaging ecosystem.</p>
+
+<p>This talk will present the journey that brought us to this point, the challenges we’ve faced implementing this functionality and the solution we created in Kedro, an open-source Python framework for data science. Whether you’re a data practitioner or a software engineer curious to reuse code between projects, you can draw some inspiration from this talk.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Packaging TeX Live - the challenge of multi-platform support" class="anchor" aria-hidden="true" href="#Packaging TeX Live - the challenge of multi-platform support">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Packaging TeX Live - the challenge of multi-platform support
+		</h3>
+		<b>Norbert Preining</b>
+		<p><p>The TeX environment has grown slowly but steadily to a huge collection of programs, fonts, macros, support packages. Current TeX Live ships about 5Gb in more than 3500 different units. As teTeX stopped to be developed several years ago, TeX Live has taken over as the main TeX distribution in practical all areas, not only on Unix, but also Mac (MacTeX is based on TeX Live) and is also gaining on Windows (where MikTeX is still strong).</p>
+
+<p>In this talk we recall shortly the history of TeX Live, its transition from CD/DVD based distribution to net based distribution, and the difficulties one faces when distributing a considerable piece of software to a variety of operating systems and hardware combinations (currently about 15 different arch-os combinations). Topics touched are cross-platform distribution, security, release management etc.</p>
+
+<p>Furthermore, we will discuss the topic of re-distributing TeX Live into Linux distributions like Debian, Red Hat. Integrating TeX Live into any distribution is a non-trivial task due to big amount of post installation steps. And although over the last years the quality of packages has improved, we still often get bug reports that stem from incorrect packaging.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Living with OPAM" class="anchor" aria-hidden="true" href="#Living with OPAM">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Living with OPAM
+		</h3>
+		<b>Daniil Baturin</b>
+		<p><p>OPAM is the de facto standard package manager for the OCaml programming language. As a frequent contributor to its repository, I present an overview of its evolution, features, and recent ecosystem projects such as automated lower bounds checking, as well as my own experience with it.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Building Debian packages the RPM way with debbuild" class="anchor" aria-hidden="true" href="#Building Debian packages the RPM way with debbuild">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Building Debian packages the RPM way with debbuild
+		</h3>
+		<b>Neal Gompa</b>
+		<p><p>Traditionally, building Debian packages is quite complicated. With the “debian” folder that needs to be merged into the source tree with all the various files, the various mechanisms of automagic that you may need to figure out in case it goes sideways, and the hugely over-descriptive yet difficult to understand Debian Policy Manual, it’s no surprise that people get it wrong so often! But what if there was a simpler path to making (mostly) conformant Debian package? Enter debbuild, a tool that lets you use the simpler RPM spec file format to build a Debian package. With debbuild, it’s possible to easily make portable packaging across all major distributions with very little pain! Come and see how debbuild can help make it easier to ship Linux software the right way!</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Building Flatpak apps without flatpak-builder" class="anchor" aria-hidden="true" href="#Building Flatpak apps without flatpak-builder">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Building Flatpak apps without flatpak-builder
+		</h3>
+		<b>Bartłomiej Piotrowski</b>
+		<p><p>Flatpak-builder is a wrapper around various Flatpak commands to simplify packaging software including, but not limited to, from source. But what if your application is already built as part of CI/CD pipeline, or the host Linux distribution has user namespaces disallowed? Let’s have a look at what flatpak-builder actually does and how to flatpak software from scratch.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Homebrew: A Packagers Deep Dive" class="anchor" aria-hidden="true" href="#Homebrew: A Packagers Deep Dive">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Homebrew: A Packagers Deep Dive
+		</h3>
+		<b>Mike McQuaid</b>
+		<p><p>A deep-dive on the interesting (both good and bad) aspects of the Homebrew package manager that will be interesting to other package manager maintainers or enthusiasts.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Packaging LLVM" class="anchor" aria-hidden="true" href="#Packaging LLVM">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Packaging LLVM
+		</h3>
+		<b>Serge « sans » Paille</b>
+		<p><p>The LLVM project encompasses the LLVM core libraries, clang, lld, lldb, 
+compiler-rt, flang and many other projects that gravitates around the use of theLLVM compiler infrastructure. As a whole, they aim at providing a complete tool
+chain, and its modular structure as led to the developement of many third-party
+packages such as the Zig language or the Source Trail code explorer.</p>
+
+<p>Packaging LLVM leads to numerous choices, from configuration to build,
+test, installation and granularity point of view. This talk discusses some of 
+these choices in the context of the Fedora distribution.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Containers: What's package management got to do with it?" class="anchor" aria-hidden="true" href="#Containers: What's package management got to do with it?">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Containers: What's package management got to do with it?
+		</h3>
+		<b>Nisha Kumar</b>
+		<p><p>Containers and software packages share many traits, but there are also many key attributes lacking in the container management ecosystem that are otherwise present in the package management ecosystem. The popular thinking is that containers do not need package management as those tasks either don’t apply or can be delegated to a higher level orchestrator. The consequence of missing patterns from the packaging community is a less robust and less consistent user experience in distributed cloud compared to what we experience in other domains. This talk will discuss similarities (eg: state management, configuration, and organization of packages into meta-packages) and differences (eg: weak versioning, metadata inclusion, and build determinism) in the container ecosystem compared with familiar package management ecosystems and propose potential improvements to container management inspired by learnings from the package management space.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Fortran Package Manager: Toward a rich ecosystem of Fortran packages" class="anchor" aria-hidden="true" href="#Fortran Package Manager: Toward a rich ecosystem of Fortran packages">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Fortran Package Manager: Toward a rich ecosystem of Fortran packages
+		</h3>
+		<b>Sebastian Ehlert</b>
+		<p><p>Fortran is the oldest programming language still in use today, targeting high-performance scientific and engineering applications.
+Traditionally, Fortran software has used build systems that are not portable or are difficult to use or extend.
+This has presented a significant barrier to entry for users, and has made it difficult to use libraries as dependencies, or distribute your own library for use in other projects.
+Fortran Package Manager (fpm) is a new language-specific package manager and build system.
+The key goals are to improve the user experience and nurture the growth of a rich ecosystem of Fortran libraries.</p>
+
+<p>Fpm assumes sane defaults so that most users can enjoy a zero-configuration experience, while providing options to customize behavior.
+Fpm can scaffold a new Fortran project, fetch and build remote dependencies, and run tests and project executables.
+It supports multiple compilers, runs on all major operating systems and can bootstrap itself.
+While new and rapidly developing, it is already used as a build system for large projects and has been met with an overwhelming response from the Fortran community.
+We want to discuss technical challenges that are specific to building Fortran projects and further next steps.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Serving and Managing Reproducible Conda Environments via Conda-Store" class="anchor" aria-hidden="true" href="#Serving and Managing Reproducible Conda Environments via Conda-Store">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Serving and Managing Reproducible Conda Environments via Conda-Store
+		</h3>
+		<b>Christopher Ostrouchov, Jaime Rodríguez-Guerra</b>
+		<p><p>End users think in terms of environments not packages. The core philosophy of conda-store is to serve reproducible conda environments in as many ways as possible to users and services. Conda-store was developed due to a significant need we found in enterprise architectures. There are many ways to serve environments and each plays an important role. Thus conda-store serves the same environment via a filesystem, lockfile, pinned yaml specification, conda pack archive, and docker image. This logic could easily be extended to also support the creation of VM iso’s and singularity containers</p>
+
+<p>During this talk I will highlight some common problems with environments we have seen while consulting and show how conda-store aims to solve them:</p>
+<ul>
+  <li>Friction between IT and end users in controlled environments where new packages are needed</li>
+  <li>Enabling a given notebook developed within jupyterlab to be reproducibly run in workflows reliably for years to come</li>
+  <li>Helping to removing the need for specially crafted docker containers</li>
+</ul>
+
+<p>This talk will be full of demos along with a site that everyone in the talk can try out.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Quantifying Outdatedness Using the Technical Lag Measurement" class="anchor" aria-hidden="true" href="#Quantifying Outdatedness Using the Technical Lag Measurement">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Quantifying Outdatedness Using the Technical Lag Measurement
+		</h3>
+		<b>Zerouali Ahmed</b>
+		<p><p>Frequently, reusable packages for major programming languages and operating systems are available in public package repositories where they are developed and evolved together within the same environment. Developers rely on package management tools to automate deployments, specifying which package releases satisfy the needs of their applications. However, these specifications may lead to deploying package releases that are outdated or undesirable because they do not include bug fixes, security fixes, or new functionality. In contrast, automatically updating to a more recent release may introduce incompatibility issues. Moreover, while this delicate problem is important at the level of individual packages, it becomes even more relevant at the level of large distributions of software packages where packages depend, directly or indirectly, on a large number of other packages.
+The goal of this presentation is to show how to capture this delicate balance between the need of updating to the ideal release and the risk of having breaking changes by presenting the measurement of technical lag, a concept that quantifies to which extent a deployed collection of packages is outdated with respect to the ideal deployment. Then, we empirically analyze its evolution in npm.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="conda-forge, (lib)mamba & libsolv: universal and reusable parts" class="anchor" aria-hidden="true" href="#conda-forge, (lib)mamba & libsolv: universal and reusable parts">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    conda-forge, (lib)mamba & libsolv: universal and reusable parts
+		</h3>
+		<b>Wolf Vollprecht</b>
+		<p><p>This talk introduces conda-forge (a community led collection of recipes for Windows, macOS and Linux), the mamba package manager which works cross-platform and independent of any language and the parts that make it up (libsolv and librepo). Furthermore, we will demonstrate how libmamba can be used to create bindings to mamba or specialized package managers, for example for plugin management in applications.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Are Project Tests Enough for Automated Dependency Updates? A Case Study of 262 Java Projects on Github" class="anchor" aria-hidden="true" href="#Are Project Tests Enough for Automated Dependency Updates? A Case Study of 262 Java Projects on Github">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Are Project Tests Enough for Automated Dependency Updates? A Case Study of 262 Java Projects on Github
+		</h3>
+		<b>Joseph Hejderup</b>
+		<p><p>Updating to a new version of a third-party library is traditionally not a trivial task. Github’s dependabot, Renovate, and similar services automatically create a new branch with the latest version of a library dependency and then execute project tests to detect any breaking changes. While such services are gaining a lot of traction, no study looks into whether test suites of average Github Projects have sufficient coverage and are adequate to detect incompatible library changes.</p>
+
+<p>To better understand the state of test coverage and effectiveness of project test suites for detecting incompatible library changes, I will, in this talk, present a study comprising 262 Java projects on Github. By artificially injecting faulty changes in library dependencies, we identify that test suites on average have coverage of 58% of their direct dependencies and 20% of their transitive dependencies. The average test suite effectively detects 47% of faulty updates in direct dependencies and 35% in transitive dependencies. Based on our findings, I will explain a set of recommendations for both developers and toolmakers that could potentially improve the reliability and expectations of automated dependency updating.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Defending against attacks on package managers" class="anchor" aria-hidden="true" href="#Defending against attacks on package managers">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Defending against attacks on package managers
+		</h3>
+		<b>Joshua Lock, Marina Moore</b>
+		<p><p>In this talk, Joshua Lock and Marina Moore will discuss common attacks on package managers, and the kinds of threats that package managers face as part of the software supply chain. They will then present The Update Framework (TUF), a mechanism for securing package managers against these threats in a simple, resilient way that will protect users against even nation state attacks. Package managers can adopt all features of TUF wholesale, or start with the subset that will be most helpful for their users. This talk will conclude with a demonstration of TUF’s versatility; explaining how TUF has been adopted by the Python Packaging Index (PyPI) to provide end-to-end protection of packages from the developer to the end user, and how this adoption can be used as a model for other package managers looking to improve software distribution and update security.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Go mod's lesser known features for supply chain security" class="anchor" aria-hidden="true" href="#Go mod's lesser known features for supply chain security">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Go mod's lesser known features for supply chain security
+		</h3>
+		<b>Tony Worm</b>
+		<p><p>Golangs module and dependency system addresses more than version management. This talk will explore the lesser known features which support security in the software supply chain.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="What is Chocolatey, The Package Manager for Windows?" class="anchor" aria-hidden="true" href="#What is Chocolatey, The Package Manager for Windows?">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    What is Chocolatey, The Package Manager for Windows?
+		</h3>
+		<b>Paul Broadwith</b>
+		<p><p>Nix has awesome packing tools. Many of them. Windows was always the landscape of Next -&gt; Next -&gt; Next.</p>
+
+<p>Ever wished you could take all of those Windows applications you run, install them, and not have to click anything? Easily keep them up to date and not click anything? And in WINDOWS?</p>
+
+<p>Come with me on this journey, and you’ll see a world of Windows Automation, Package Management and a thriving Community.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Python Packaging: Why Don’t You Just…?" class="anchor" aria-hidden="true" href="#Python Packaging: Why Don’t You Just…?">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Python Packaging: Why Don’t You Just…?
+		</h3>
+		<b>Tzu-ping Chung</b>
+		<p><p>Every packaging system has its specific way of doing things, but to an outsider. Python’s seems to have a knack of finding the most non-straightforward and weird solution for every choice. This talk attempts to trace some of the peculiarities to find out the reasoning behind the decisions, and how they stand in the modern packaging landscape.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Streamlining VMware's Open Source Licensing Compliance With Bazel" class="anchor" aria-hidden="true" href="#Streamlining VMware's Open Source Licensing Compliance With Bazel">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Streamlining VMware's Open Source Licensing Compliance With Bazel
+		</h3>
+		<b>Daniel Machlab</b>
+		<p><p>With hundreds of thousands of open source software (OSS) projects to choose from, OSS is a vital component of almost any codebase. However, with over a thousand unique licenses to comply with, complexity of managing OSS use cannot be overlooked. Identifying and tracking OSS to comply with license requirements adds friction to the development process and can result in product-release delays. At VMware, developers must run a scanner to identify a Bill of Material (BOM) of what OSS is being used. This extra step adds toil and leaves room for error. Some scanners are imprecise, compounding these issues.</p>
+
+<p>We solve this problem using Bazel to create an accurate BOM containing OSS and third-party packages during a build. To do this, we made a Bazel aspect that analyzes the dependency graph and collects information about each package from VMware’s internal Artifactory. Additionally, it consumes a list of approved and denied OSS from VMware’s legal team. By moving OSS validation to build time, OSS decisions are made earlier in the development and review process, making them less costly.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="IPS, How Apt became docker before docker existed" class="anchor" aria-hidden="true" href="#IPS, How Apt became docker before docker existed">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    IPS, How Apt became docker before docker existed
+		</h3>
+		<b>Till (Toasty) Wegmueller</b>
+		<p><p>Several OpenSolaris descendants use the Image Packaging System, short IPS. IPS itself is a spiritual descendant of apt from debian. Addressing several shortcomings of apt and adding the concept of images, Update-alternatives (mediators) and other related tools.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="IPFS ❤ Python Wheels: Efficient, Secure and Reproducible Repository" class="anchor" aria-hidden="true" href="#IPFS ❤ Python Wheels: Efficient, Secure and Reproducible Repository">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    IPFS ❤ Python Wheels: Efficient, Secure and Reproducible Repository
+		</h3>
+		<b>Nguyễn Gia Phong, Huy Ngo</b>
+		<p><p>Python wheel is a beautifully simple format for cross-platform binary distribution.  Combining it with the simple repository API, we have the Python Package Index (PyPI) tirelessly serving Pythonistas.  PyPI is great as a package index, but in certain ways it is unsuitable for end-user usages: it is subject to multiple supply chain attacks, its centralised nature leads to difficult mirroring while being a single point
+of failure, and expensive dependency resolution is left for client-side.</p>
+
+<p>The interplanetary wheels (IPWHL) are platform-unique, singly-versioned Python binary distributions backed by IPFS.  It does not try to replace PyPI but aims to be a downstream wheel supplier in a fashion similar to GNU/Linux distributions, whilst take advantage of a content-addressing peer-to-peer network to provide a reproducible, easy-to-mirror source of packages.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Adventures in packaging rust programs" class="anchor" aria-hidden="true" href="#Adventures in packaging rust programs">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Adventures in packaging rust programs
+		</h3>
+		<b>Efraim Flashner</b>
+		<p><p>Rust has been around as a language for about 10 years now and a necessary part of distribution packaging for at least the last 4 with Firefox depending on it. In Guix we’ve been struggling to have a sane way to package rust applications and all their dependencies while trying to keep a handle on visualizing build chains and an ever expanding package set.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Package information on ELF objects" class="anchor" aria-hidden="true" href="#Package information on ELF objects">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Package information on ELF objects
+		</h3>
+		<b>Zbigniew Jędrzejewski-Szmek, Luca Boccassi</b>
+		<p><p>Programs crash. And when they do, they dump core, and we want to tell the user which package, including the version, caused the failure. This talk describes a compact JSON-based format that is embedded directly in the binaries as an ELF note. By embedding the this information directly in the binary object, package information is immediately available from a core dump, independently of any external packaging metadata. This is a cross-distro collaboration, with the eventual goal of having the same metadata automatically added by all distributions.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Beyond version solving: implementing general package solvers with Answer Set Programming" class="anchor" aria-hidden="true" href="#Beyond version solving: implementing general package solvers with Answer Set Programming">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Beyond version solving: implementing general package solvers with Answer Set Programming
+		</h3>
+		<b>Todd Gamblin</b>
+		<p><p>Most package managers need a dependency solver, but dependency solving is an NP-hard problem, and writing a correct solver from scratch is difficult to do correctly, let alone a fast solver. Simply understanding the solution space is a challenge, from simple SAT solvers, to specialized solutions like PubGrub and libsolv, to Satisfiabilty Modulo Theories (SMT) and Answer Set Programming (ASP) solvers. Solvers may need to optimize for multiple objectives – preferring the most recent versions of dependencies is common, but multi-valued build options, optional dependencies, virtual dependencies, and build options like compilers, architectures, and ABI compatibility can also factor into a solve.</p>
+
+<p>We have recently shipped a new solver in the Spack package manager that relies on the <code class="language-plaintext highlighter-rouge">clingo</code> Answer Set Programming (ASP) framework to accomplish many of these goals. We’ll talk about how we handle complex features like optional dependencies, generalized conditions, virtual dependencies (interfaces), compiler selection, ABI options, and multiple optimization criteria in around 500 lines of declarative code. We’ll talk about some of the semantics of ASP that lend themselves to very general package solving (vs other models like SMT). Finally, we’ll show some performance numbers with large package repositories.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Integrating upstream projects to Fedora Linux" class="anchor" aria-hidden="true" href="#Integrating upstream projects to Fedora Linux">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Integrating upstream projects to Fedora Linux
+		</h3>
+		<b>František Lachman, Tomas Tomecek</b>
+		<p><p>We are offering Packit, a free GitHub app and GitLab integration which enables you to build and test your upstream project on an RPM-based Linux distribution like Fedora Linux, CentOS Stream, Mageia or openSUSE. Once you get RPM builds of your project, you can be pretty sure that your project will work once released and delivered via the downstream distribution. The core functionality of Packit is built around pull requests (as a standard CI system) and releases (bring the release to Fedora rawhide). You can read more about Packit at https://packit.dev/</p>
+
+<p>In this session, Franta and Tomas will describe the Packit project, Fedora’s packaging workflow, showcase some of the well-known projects which use Packit and offer a brief perspective on what it’s like to develop and maintain the integration service.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="An Invitation to Order-Theoretic Models of Package Dependencies" class="anchor" aria-hidden="true" href="#An Invitation to Order-Theoretic Models of Package Dependencies">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    An Invitation to Order-Theoretic Models of Package Dependencies
+		</h3>
+		<b>Gershom Bazerman</b>
+		<p><p>This talk will introduce some elements of ongoing research in the mathematical structure of package dependencies. This work helps to explain how to think about dependencies, how to compare expressiveness of dependency systems (and strength of solvers), and also how to model an algebra of operations of package repositories.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="How Nix and NixOS Get So Close to Perfect" class="anchor" aria-hidden="true" href="#How Nix and NixOS Get So Close to Perfect">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    How Nix and NixOS Get So Close to Perfect
+		</h3>
+		<b>Xe</b>
+		<p><p>Nix, the package manager for the distribution NixOS, is a package manager built on top of functional programming principles. In this talk I’ll discuss how they get close to what I’d consider perfect and what future improvements on the concept should learn from Nix and NixOS.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="The Promises and Perils of Adopting Static Analysis in Dependency Analyzers" class="anchor" aria-hidden="true" href="#The Promises and Perils of Adopting Static Analysis in Dependency Analyzers">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    The Promises and Perils of Adopting Static Analysis in Dependency Analyzers
+		</h3>
+		<b>Joseph Hejderup</b>
+		<p><p><code class="language-plaintext highlighter-rouge">npm audit</code>, <code class="language-plaintext highlighter-rouge">cargo audit</code>, <code class="language-plaintext highlighter-rouge">dependabot</code>, and similar analyzers have one thing in common: they provide feedback by only analyzing project manifests. I have one big problem with this: we are generalizing how projects use dependencies through metadata analysis! Without looking into how projects “actually” use dependencies, we deprive developers of insightful feedback that could save development time and effort. In this talk, I will discuss the differences and similarities between metadata-level versus code-level (i.e., static analysis) dependency analyses. Specifically, I will explain scenarios that are sufficient to use metadata analysis and when it is not. Moreover, I will also discuss the general applicability and challenges of adopting static analysis in dependency analyzers.</p>
+
+<p>The talk is based on my research paper: “Präzi: From Package-based to Call-based Dependency Networks” You can find the paper here: https://arxiv.org/abs/2101.09563</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Why everyone should do reproducible builds" class="anchor" aria-hidden="true" href="#Why everyone should do reproducible builds">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Why everyone should do reproducible builds
+		</h3>
+		<b>Bernhard M. Wiedemann</b>
+		<p><p>Why everyone should do reproducible builds and how can package managers help in getting there.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Comparing semantic versioning practices in Cargo, npm, Packagist and Rubygems" class="anchor" aria-hidden="true" href="#Comparing semantic versioning practices in Cargo, npm, Packagist and Rubygems">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Comparing semantic versioning practices in Cargo, npm, Packagist and Rubygems
+		</h3>
+		<b>Tom Mens</b>
+		<p><p>Semantic versioning (semver) is a commonly accepted open source practice, used  by many package management systems to inform whether new package releases introduce possibly backward incompatible changes. Maintainers depending on such packages can use this practice to reduce the risk of breaking changes in their own packages by specifying version constraints on their dependencies. Depending on the amount of control a package maintainer desires to assert over her package dependencies, these constraints can range from very permissive to very restrictive.
+We empirically compared the evolution of semver compliance in four package management systems: Cargo, npm, Packagist and Rubygems. We discuss to what extent ecosystem-specific characteristics influence the degree of semver compliance, and we suggest to develop tools adopting the wisdom of the crowds to help package maintainers decide which type of version constraints they should impose on their dependencies.
+We also studied to which extent the packages distributed by these package managers are still using a 0.y.z release, suggesting less stable and immature packages. We explore the effect of such “major zero” packages on semantic versioning adoption.
+Our findings shed insight in some important differences between package managers with respect to package versioning policies.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Triforce: repository management" class="anchor" aria-hidden="true" href="#Triforce: repository management">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Triforce: repository management
+		</h3>
+		<b>Kevin Mittman</b>
+		<p><p>As repositories grow in size with packages, the time complexity starts to become O(n*log(n)) to keep the metadata up-to-date, because retaining the history requires re-parsing published packages and those must be available locally.</p>
+
+<p>At NVIDIA, the Triforce repository management system handles the release process in O(n). To re-generate the metadata, one or more product release candidates are merged together using OverlayFS, on top of the public repository; this avoids the need for copying hundreds of gigabytes of existing packages, significantly reducing the I/O and storage usage.</p>
+
+<p>Another consideration is how long it takes to build the metadata, by default generated from scratch each time. For RPM repositories, createrepo_c has the flag –update which skips over existing packages that have not changed. However for Debian repositories, existing tools such as apt-ftparchive lack such functionality. Comparing the filenames and file sizes is a good enough indicator if the package can be skipped. Parsing dpkg –info, it is possible to form the fields in a deterministic order for each block. From there it is as simple as appending the new metadata to the existing Packages.gz and regenerating the Release file.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="Challenges with Java in a hermetic world" class="anchor" aria-hidden="true" href="#Challenges with Java in a hermetic world">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    Challenges with Java in a hermetic world
+		</h3>
+		<b>Farid Zakaria, Carlos Maltzahn</b>
+		<p><p>Nix and similar tools (Spack) promise a reproduciblity story for packages (from source or bitwise).
+Specifically within Nix, several languages have successfully integrated into the ecosystem but some such as Java are oddly absent given their popularity.</p>
+
+<p>In a search for how to better integrate Java into a Nix-centric workflow, we go over some current challenges with the fractured Java ecosystem and how the appeal of a federated artifact store has led to sharp edges.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="The quirks and challenges of pip's test suite and CI" class="anchor" aria-hidden="true" href="#The quirks and challenges of pip's test suite and CI">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    The quirks and challenges of pip's test suite and CI
+		</h3>
+		<b>Pradyun Gedam</b>
+		<p><p><code class="language-plaintext highlighter-rouge">pip</code>, Python’s package manager, is developed independently from the Python language by a fairly independent team. It has an extensive test suite, with significant complexity and computational requirements. A mix of I/O heavy tests and CPU heavy tests, combined with the wide matrix of supported platforms and Python versions, introduce some interesting challenges when needing to run an overall CI workflow in a reasonable amount of time. This talk goes into the trials and tribulations of getting the CI for pip to run in less than 30 minutes.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="dh-dist-zilla: From Dist::Zilla's dist.ini to Debian's .deb in one go" class="anchor" aria-hidden="true" href="#dh-dist-zilla: From Dist::Zilla's dist.ini to Debian's .deb in one go">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    dh-dist-zilla: From Dist::Zilla's dist.ini to Debian's .deb in one go
+		</h3>
+		<b>Axel Beckert</b>
+		<p><p>Building proper Debian packages from Dist::Zilla maintained Perl modules, especially from git checkouts without having a Dist::Zilla generated tar ball yet.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="distri: researching fast Linux package management" class="anchor" aria-hidden="true" href="#distri: researching fast Linux package management">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    distri: researching fast Linux package management
+		</h3>
+		<b>Michael Stapelberg</b>
+		<p><p>Linux package managers are too slow; how could we make things better?</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="SBOM, Packaging, and Vulnerabilities" class="anchor" aria-hidden="true" href="#SBOM, Packaging, and Vulnerabilities">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    SBOM, Packaging, and Vulnerabilities
+		</h3>
+		<b>Kate Stewart, Art Manion</b>
+		<p><p>Three years of community-oriented software bill of materials (SBOM) work under NTIA has lead to (among other things):</p>
+
+<ul>
+  <li>Framing of a model, architecture, and requirements for SBOMs, data, and processes</li>
+  <li>Formats that satisfy the framing constraints: SPDX, CycloneDX, SWID</li>
+</ul>
+
+<p>To scale, and really to function at all, SBOM production needs to happen during software development phases such as build, <em>packaging</em>, and deployment. See that? Packaging.</p>
+
+<p>We informally reviewed a handful of package management systems to look for commonality, differences, and alignment with the NTIA SBOM effort. One clearly identified SBOM use case, vulnerability management, stands to benefit from more and higher quality SBOM and inventory information.</p>
+
+<p>What kinds of data does vulnerability management need from SBOM? To what extent do package management systems provide this data? What are the common elements that package management systems already provide?</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="How Helm, The Package Manager For Kubernetes, Works" class="anchor" aria-hidden="true" href="#How Helm, The Package Manager For Kubernetes, Works">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    How Helm, The Package Manager For Kubernetes, Works
+		</h3>
+		<b>Matt Farina</b>
+		<p><p>Helm is the long standing package manager for Kubernetes. Helm packages, called charts, are installed from distributed repositories. In this session you’ll learn how Helm came to be, how Helm works, and why it was designed this way. This will include how Helm handles dependencies, how charts are created, signing and verification, and more.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="BinaryBuilder.jl — Using Julia's Pkg to deliver binary libraries" class="anchor" aria-hidden="true" href="#BinaryBuilder.jl — Using Julia's Pkg to deliver binary libraries">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    BinaryBuilder.jl — Using Julia's Pkg to deliver binary libraries
+		</h3>
+		<b>Elliot Saba, Mosè Giordano</b>
+		<p><p><a href="https://binarybuilder.org/"><code class="language-plaintext highlighter-rouge">BinaryBuilder.jl</code></a> is a framework that allows you to compile binaries for an ever-growing set of platforms (16 currently): Linux, FreeBSD, macOS and Windows on various architectures.  While <code class="language-plaintext highlighter-rouge">BinaryBuilder.jl</code> is mainly employed to build libraries and programs used in packages for the <a href="https://julialang.org/">Julia programming language</a>, it is completely general and anyone can install and use on their system the binaries it produces.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="PyPI & Supply Chain Security" class="anchor" aria-hidden="true" href="#PyPI & Supply Chain Security">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    PyPI & Supply Chain Security
+		</h3>
+		<b>Dustin Ingram</b>
+		<p><p>The Python Package Index (PyPI) is one of the oldest software repositories for a language ecosystem and the canonical place to publish Python code. It serves more than 2 billion requests a day, and is almost entirely supported by volunteers and the non-profit Python Software Foundation.</p>
+
+<p>In this talk, we’ll review some recent supply-chain attacks and how they relate to PyPI specifically. In addition, we’ll take a look at some in-progress projects to make PyPI more resilient, secure and sustainable.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+  <li>
+  	<div>
+  		<h3>
+  			
+        <a id="The Riddle of Package Managers… Solved by Conan" class="anchor" aria-hidden="true" href="#The Riddle of Package Managers… Solved by Conan">
+          <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path>
+          </svg>
+        </a>
+		    The Riddle of Package Managers… Solved by Conan
+		</h3>
+		<b>Batel Zohar</b>
+		<p><p>As a C and C++ developer how do you choose the right package management system for your code? There are a ton of questions that you should be asking yourself: does it have integrations, do we need end-to-end binary management, can it work with different software systems, will it provide consistency to my CI/CD workflow? Fortunately we have an open source solution that solves the riddle of package managers… Conan!</p>
+
+<p>Conan the Barbarian is forced to solve “The riddle… of steel,” so that he can reach his end goal of resting in eternity in Valhalla. To a somewhat lesser degree we want to make our users happy and solve the riddle of package managers and for us that is Conan with Artifactory. In this session we will talk about how C and C++ developers that are having issues when trying to create a repository system for their packages can solve this complex problem with Conan. Conan abstracts away build systems, defines a “Project API” for C++ project, provides a repository system for multi-binary packages, and serves as a building block for Continuous Integration workflows.</p>
+</p>
+<!--     <a href="https://github.com/">
+      
+    </a>
+ -->  </li>
+
+</ul>
+</div>
+      <div class="bg-purple">
+      <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Sponsorships</h1>
+          <p class="text-center">
+            The PackagingCon conference could not happen without support from amazing sponsors.<br/>
+            Are you interested in becoming a sponsor?<br/>
+            If so, please see our <a href="/assets/sponsorship_prospectus_packagingcon.pdf" style="color: #fff">sponsorship prospectus</a> or contact us at <a href="mailto:info@packaging-con.org" style="color: #fff">info@packaging-con.org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white">
+    <div class="container py-5">
+      <h2 class="text-center">Platinum</h2>
+        <div class="logos">
+          <div class="platinum">
+            <a href="https://www.citadel.com/" target="_blank">
+              <img src="/assets/images/citadel.svg"/>
+            </a>
+            <hr/>
+            
+            <a href="http://www.techatbloomberg.com/?utm_campaign=MKTG_2021TechConferences&utm_content=site-partner&utm_medium=cto&utm_source=site-partner" target="_blank">
+              <img src="/assets/images/techatbloomberg.png"/>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="container py-5">
+      <h2 class="text-center">Gold</h2>
+        <div class="logos">
+          <div class="gold">
+            <a href="https://cloudsmith.com/" target="_blank">
+              <img src="/assets/images/cloudsmith.png"/>
+            </a>
+            <a href="https://quantstack.net" target="_blank">
+              <img src="/assets/images/quantstack.svg"/>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="container py-5">
+      <h2 class="text-center">Silver</h2>
+        <div class="logos">
+          <div class="silver">
+            <a href="https://get.opensuse.org/" target="_blank">
+              <img src="/assets/images/openSUSE.png"/>
+            </a>
+            <a href="https://www.quansight.com" target="_blank">
+              <img src="/assets/images/quansight.png" style="max-width: 300px;"/>
+            </a>
+            <a href="https://www.tweag.io" target="_blank">
+              <img src="/assets/images/tweag_io.svg" width="300px" style="max-width: 300px;"/>
+            </a>
+            <a href="https://www.anaconda.com" target="_blank">
+              <img src="/assets/images/anaconda.png" width="300px" style="max-width: 300px;"/>
+            </a>
+            <a href="https://www.collabora.com/" target="_blank">
+              <img src="/assets/images/collabora.png" width="230px" style="max-width: 300px;"/>
+            </a>
+          </div>
+      </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+      <div class="row bg-light">
+        <div class="col py-5 text-center">
+          <a href="https://twitter.com/packagingcon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @packagingcon</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>Organized in partnership with NumFOCUS.</p>
+          <p>We adhere to the NumFOCUS Code of Conduct</p>
+        </div>
+      </div>
+    </footer>
+
+</body>

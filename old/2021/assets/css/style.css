@@ -1,0 +1,101 @@
+header {
+  background: url("/assets/images/header_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+header #logo {
+  margin: 0 auto;
+  max-width: 50%;
+}
+header #logo img {
+  max-width: 100%;
+}
+
+ul.talks-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.logos a {
+  display: inline-block;
+}
+
+.silver {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.gold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.platinum {
+  margin: 50px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.silver img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.gold img {
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.platinum img {
+  width: 600px;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 995px) {
+  .silver {
+    margin: 30px 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gold {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .silver img {
+    max-width: 170px;
+  }
+  .gold img {
+    max-width: 340px;
+  }
+  .platinum img {
+    max-width: 500px;
+  }
+}
+.bg-purple {
+  color: #FFF;
+  background: #6200EE;
+}
+
+.bg-white {
+  color: #000;
+  background: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */
