@@ -1,3 +1,4 @@
+<!---------
 ### Conference Schedule, Attendee Information & Job Board
 
 We are excited to announce the conference schedule for the talks accepted at PackagingCon 2021! Below, you will also find information for attendees. Please also take a moment to see job listings by our Sponsors.
@@ -28,29 +29,56 @@ We are excited about the accepted talks at PackagingCon 2021! You can find the f
   </div>
 </div>
 
-### Register for PackagingCon
+------------>
 
-Register now to receive updates for PackagingCon 2021. We will keep you in the loop on all things PackagingCon!
+### Registration is Open
 
+PackagingCon offers discounts for early registration, virtual attendance, and for students and those paying their own way.
 
-#### Suggested Ticket Prices:
+<!----
+* Early registrations receive a 25% discount
+* Student registrations (undergraduates, grad students, post-docs) receive a 50% discount
+* Personal registrations (your employer / grant is not paying your way) receive a 25% discount
+* Virtual registrations receive a 75% discount.
+* **Discounts accumulate**. For example, students who register early and attend virtually get over a 90% discount
+---->
 
-While PackagingCon has no costs for venue or catering, there are still costs associated with bringing the event online. Additionally, revenue from the event will be used for next year's conference and to support open source scientific computer programming through NumFOCUS, a nonprofit organization that sponsors 43 Open Source Projects, and organizes community-driven educational programs for users and developers of open source scientific tools.
-
-For this reason, we have chosen to sell tickets with a pay-what-you-can pricing model.
-
-- $20 for students
-- $50 for professionals
-- $100 for professionals (reimbursed by employer)
+**Early registration ends September 8.  All registration ends on October 6.**
 
 <div class="container">
   <div class="row my-5">
     <div class="col text-center">
-        <a href="https://www.eventbrite.com/e/packagingcon-2021-tickets-164662898161" class="text-center btn btn-primary">Register for PackagingCon</a>
+        <a href="https://ti.to/packagingcon/packagingcon-2023" class="text-center btn btn-primary">Register now!</a>
     </div>
   </div>
 </div>
 
+
+#### In Person Prices
+
+In person registration includes all PackagingCon events.
+
+| | Early Bird <br />(by Sep 8) | Standard <br />(by Oct 6) |
+| ---------------: | :----: | :----: |
+| **Student**      | €150   | €200   |
+| **Personal**     | €200   | €300   |
+| **Professional** | €300   | €400   |
+
+<br />
+
+#### Virtual Event Prices
+
+Virtual participants will have live access to all conference talks, and to the conference's community chat platform.
+
+| | Early Bird <br />(by Sep 8) | Standard <br />(by Oct 6) |
+| ---------------: | :---: | :---: |
+| **Student**      | €38   | €50   |
+| **Personal**     | €50   | €75   |
+| **Professional** | €75   | €100  |
+
+<br />
+
+<!----
 ### Packaging Con 2021: Call for Presentations
 
 The Submissions have been closed but we are still open to accepting Lightning Talks.
@@ -87,6 +115,7 @@ Note: US and European timezones will be targetted for the main conference event.
     </div>
   </div>
 </div>
+------>
 
 ### Code of Conduct
 
